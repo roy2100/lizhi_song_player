@@ -389,20 +389,30 @@ button {
   gap: 8px;
   width: 100%;
   min-height: 56px;
-  padding: 8px 0;
+  margin: 4px 0;
+  padding: 8px;
   border: 0;
-  border-bottom: 1px solid var(--line);
+  border-radius: 7px;
   background: transparent;
   text-align: left;
+  transition:
+    background-color 0.16s ease,
+    color 0.16s ease;
 }
 
 .song-row.is-active {
-  margin: 4px 0;
-  padding-inline: 8px;
-  border-bottom-color: transparent;
-  border-radius: 7px;
-  background: rgba(235, 235, 240, 0.92);
-  color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .song-row:hover {
+    background: rgba(235, 235, 240, 0.92);
+  }
+
+  .song-row.is-active:hover {
+    background: var(--accent);
+  }
 }
 
 .song-row.is-failed .song-title strong {
@@ -437,6 +447,14 @@ button {
 
 .song-more {
   justify-self: end;
+}
+
+.song-row.is-active .song-index,
+.song-row.is-active .song-duration,
+.song-row.is-active .song-more,
+.song-row.is-active .song-title small,
+.song-row.is-active.is-failed .song-title strong {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .player-bar {

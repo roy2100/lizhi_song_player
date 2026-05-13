@@ -87,6 +87,41 @@ function pickRandomTrack(tracks, avoidId) {
   return candidates[Math.floor(Math.random() * candidates.length)];
 }
 
+function setMediaSessionAction(action, handler) {
+  if (typeof navigator === "undefined" || !("mediaSession" in navigator)) {
+    return;
+  }
+
+  try {
+    navigator.mediaSession.setActionHandler(action, handler);
+  } catch {
+    // Some browsers expose Media Session but do not support every action.
+  }
+}
+
+function updateMediaSessionPosition(audio) {
+  if (
+    typeof navigator === "undefined" ||
+    !("mediaSession" in navigator) ||
+    typeof navigator.mediaSession.setPositionState !== "function" ||
+    !audio ||
+    !Number.isFinite(audio.duration) ||
+    audio.duration <= 0
+  ) {
+    return;
+  }
+
+  try {
+    navigator.mediaSession.setPositionState({
+      duration: audio.duration,
+      playbackRate: audio.playbackRate || 1,
+      position: Math.min(audio.currentTime || 0, audio.duration),
+    });
+  } catch {
+    // Position state is optional and may reject incomplete media data.
+  }
+}
+
 function App() {
   const audioRef = useRef(null);
   const rawTracks = useMemo(() => getListData(), []);
@@ -303,6 +338,95 @@ function App() {
       return "all";
     });
   }
+
+  useEffect(() => {
+    if (
+      typeof navigator === "undefined" ||
+      !("mediaSession" in navigator) ||
+      typeof MediaMetadata !== "function" ||
+      !currentTrack
+    ) {
+      return;
+    }
+
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: currentTrack.name,
+      artist: currentTrack.displayArtist,
+      album: currentTrack.albumName,
+      artwork: [
+        {
+          src: currentTrack.cover,
+          sizes: "512x512",
+          type: "image/png",
+        },
+      ],
+    });
+  }, [currentTrack]);
+
+  useEffect(() => {
+    if (typeof navigator === "undefined" || !("mediaSession" in navigator)) {
+      return;
+    }
+
+    navigator.mediaSession.playbackState = isPlaying ? "playing" : "paused";
+  }, [isPlaying]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+
+    setMediaSessionAction("play", () => {
+      if (!currentTrack && tracks[0]) {
+        playTrack(tracks[0], tracks);
+        return;
+      }
+
+      setIsPlaying(true);
+    });
+    setMediaSessionAction("pause", () => setIsPlaying(false));
+    setMediaSessionAction("stop", () => {
+      if (audio) audio.currentTime = 0;
+      setIsPlaying(false);
+    });
+    setMediaSessionAction("previoustrack", playPrevious);
+    setMediaSessionAction("nexttrack", playNext);
+    setMediaSessionAction("seekbackward", (details) => {
+      if (!audio) return;
+      const offset = details.seekOffset || 10;
+      audio.currentTime = Math.max((audio.currentTime || 0) - offset, 0);
+      setCurrentTime(audio.currentTime);
+      updateMediaSessionPosition(audio);
+    });
+    setMediaSessionAction("seekforward", (details) => {
+      if (!audio || !Number.isFinite(audio.duration)) return;
+      const offset = details.seekOffset || 10;
+      audio.currentTime = Math.min((audio.currentTime || 0) + offset, audio.duration);
+      setCurrentTime(audio.currentTime);
+      updateMediaSessionPosition(audio);
+    });
+    setMediaSessionAction("seekto", (details) => {
+      if (!audio || !Number.isFinite(details.seekTime)) return;
+      audio.currentTime = details.seekTime;
+      setCurrentTime(details.seekTime);
+      updateMediaSessionPosition(audio);
+    });
+
+    return () => {
+      [
+        "play",
+        "pause",
+        "stop",
+        "previoustrack",
+        "nexttrack",
+        "seekbackward",
+        "seekforward",
+        "seekto",
+      ].forEach((action) => setMediaSessionAction(action, null));
+    };
+  }, [currentTrack, currentQueue, currentIndex, isShuffle, repeatMode, tracks]);
+
+  useEffect(() => {
+    updateMediaSessionPosition(audioRef.current);
+  }, [currentTime, duration]);
 
   if (!tracks.length) {
     return (
