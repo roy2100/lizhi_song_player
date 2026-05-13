@@ -13,24 +13,27 @@ export default function Home({
   onPlayAlbum,
 }) {
   return (
-    <main className="home-view">
+    <>
       <section className="hero" style={{ "--hero-cover": `url("${artistCover}")` }}>
-        <div className="hero-art-wrap">
-          <img className="hero-art" src={artistCover} alt={ARTIST_NAME} />
-        </div>
-        <div className="hero-footer">
-          <button
-            className="hero-play"
-            type="button"
-            onClick={() => featuredAlbum && onPlayAlbum(featuredAlbum)}
-            aria-label="播放"
-          >
-            <Play size={20} fill="currentColor" />
-          </button>
-          <span className="hero-name">{ARTIST_NAME}</span>
+        <div className="hero-inner">
+          <div className="hero-art-wrap">
+            <img className="hero-art" src={artistCover} alt={ARTIST_NAME} />
+          </div>
+          <div className="hero-footer">
+            <button
+              className="hero-play"
+              type="button"
+              onClick={() => featuredAlbum && onPlayAlbum(featuredAlbum)}
+              aria-label="播放"
+            >
+              <Play size={20} fill="currentColor" />
+            </button>
+            <span className="hero-name">{ARTIST_NAME}</span>
+          </div>
         </div>
       </section>
 
+      <main className="home-view">
       <section className="content-section">
         <div className="section-header">
           <h2>歌曲排行</h2>
@@ -100,5 +103,6 @@ export default function Home({
         </div>
       </section>
     </main>
+    </>
   );
 }

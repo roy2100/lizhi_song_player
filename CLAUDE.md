@@ -2,10 +2,6 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## 语言
-
-请始终使用中文回复。
-
 ## 项目概览
 
 李志音乐播放器 —— Apple Music 风格的移动端优先网页播放器，按照完整 Web App 标准开发。React + Vite 构建，`react-router-dom` HashRouter 路由，无额外状态管理库。

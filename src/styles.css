@@ -72,12 +72,18 @@ button {
 
 .hero {
   position: relative;
-  min-height: 320px;
-  padding: 44px 22px 26px;
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(181, 239, 228, 0.92), rgba(130, 183, 172, 0.9)),
     #ace7dc;
+}
+
+.hero-inner {
+  position: relative;
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  min-height: 320px;
+  padding: 44px 22px 26px;
 }
 
 .hero::before {
