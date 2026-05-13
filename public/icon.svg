@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1a1a1a"/>
+  <g fill="white">
+    <!-- 音符 -->
+    <rect x="195" y="155" width="28" height="160" rx="14"/>
+    <rect x="289" y="130" width="28" height="140" rx="14"/>
+    <rect x="195" y="283" width="122" height="28" rx="14"/>
+    <!-- 音符圆头 -->
+    <ellipse cx="195" cy="315" rx="36" ry="26" fill="white"/>
+    <ellipse cx="289" cy="270" rx="36" ry="26" fill="white"/>
+  </g>
+</svg>
