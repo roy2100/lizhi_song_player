@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { ArrowLeft, MoreHorizontal, Pause, Play, Plus, Shuffle } from "lucide-react";
+import { ArrowLeft, Pause, Play, Shuffle } from "lucide-react";
 import { ARTIST_NAME, formatTime } from "../utils";
 
 export default function AlbumDetail({
@@ -72,9 +72,6 @@ export default function AlbumDetail({
               <Play size={16} fill="currentColor" />
               播放
             </button>
-            <button className="btn-icon" type="button" aria-label="添加到资料库">
-              <Plus size={17} />
-            </button>
           </div>
         </div>
       </div>
@@ -106,7 +103,6 @@ export default function AlbumDetail({
               <span className="song-duration">
                 {formatTime(trackDurations[track.id])}
               </span>
-              <MoreHorizontal size={18} className="song-more" />
             </button>
           );
         })}

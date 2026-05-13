@@ -80,7 +80,7 @@ export default function PlayerBar({
           <strong>{currentTrack?.name || "未选择歌曲"}</strong>
           <span>
             {currentTrack
-              ? `${currentTrack.displayArtist} — ${currentTrack.albumName}`
+              ? `${currentTrack.artist} — ${currentTrack.albumName}`
               : ARTIST_NAME}
           </span>
         </div>

@@ -7,6 +7,9 @@ const base = isGitHubPages ? "/lizhi_song_player/" : "/";
 
 export default defineConfig({
   base,
+  test: {
+    environment: "jsdom",
+  },
   plugins: [
     react(),
     VitePWA({

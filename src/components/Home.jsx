@@ -1,4 +1,4 @@
-import { ChevronRight, MoreHorizontal, Pause, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import { ARTIST_NAME } from "../utils";
 
 export default function Home({
@@ -37,7 +37,6 @@ export default function Home({
       <section className="content-section">
         <div className="section-header">
           <h2>歌曲排行</h2>
-          <ChevronRight size={18} />
         </div>
         <div className="chart-grid">
           {chartTracks.map((track) => (
@@ -52,7 +51,6 @@ export default function Home({
                 <strong>{track.name}</strong>
                 <span>{track.albumName}</span>
               </span>
-              <MoreHorizontal size={16} className="chart-more" />
             </button>
           ))}
         </div>

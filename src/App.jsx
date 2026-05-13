@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
-import listSource from "../list.js?raw";
+import db from "./db.json";
 import {
-  buildAlbums,
   FALLBACK_COVER,
-  getListData,
-  normalizeTracks,
+  loadPlayCounts,
   pickRandom,
+  savePlayCounts,
 } from "./utils";
 import AlbumDetail from "./components/AlbumDetail";
 import Home from "./components/Home";
@@ -40,9 +39,8 @@ function updateMediaSessionPosition(audio) {
 export default function App() {
   const navigate = useNavigate();
   const audioRef = useRef(null);
-  const rawTracks = useMemo(() => getListData(listSource), []);
-  const tracks = useMemo(() => normalizeTracks(rawTracks), [rawTracks]);
-  const albums = useMemo(() => buildAlbums(tracks), [tracks]);
+  const tracks = useMemo(() => db.tracks, []);
+  const albums = useMemo(() => db.albums, []);
 
   const featuredAlbum = useMemo(
     () =>
@@ -56,7 +54,6 @@ export default function App() {
 
   const artistCover =
     albums.find((a) => a.name === "你好，郑州")?.cover || FALLBACK_COVER;
-  const chartTracks = useMemo(() => tracks.slice(0, 12), [tracks]);
 
   const [queue, setQueue] = useState(tracks);
   const [currentTrack, setCurrentTrack] = useState(tracks[0] || null);
@@ -68,6 +65,14 @@ export default function App() {
   const [volume, setVolume] = useState(0.88);
   const [trackDurations, setTrackDurations] = useState({});
   const [failedTracks, setFailedTracks] = useState({});
+  const [playCounts, setPlayCounts] = useState(() => loadPlayCounts());
+
+  const chartTracks = useMemo(() => {
+    const source = featuredAlbum?.tracks ?? tracks;
+    return [...source]
+      .sort((a, b) => (playCounts[b.id] ?? 0) - (playCounts[a.id] ?? 0))
+      .slice(0, 12);
+  }, [featuredAlbum, tracks, playCounts]);
 
   useEffect(() => {
     setQueue(tracks);
@@ -103,10 +108,17 @@ export default function App() {
     ? currentQueue.findIndex((t) => t.id === currentTrack.id)
     : -1;
 
-  function playTrack(track, nextQueue = currentQueue) {
+  function playTrack(track, nextQueue = currentQueue, countPlay = true) {
     setQueue(nextQueue.length ? nextQueue : tracks);
     setCurrentTrack(track);
     setIsPlaying(true);
+    if (countPlay) {
+      setPlayCounts((prev) => {
+        const next = { ...prev, [track.id]: (prev[track.id] ?? 0) + 1 };
+        savePlayCounts(next);
+        return next;
+      });
+    }
   }
 
   function playAlbum(album) {
@@ -165,7 +177,10 @@ export default function App() {
       setIsPlaying(false);
       return;
     }
-    playNext();
+    const next = isShuffle
+      ? pickRandom(currentQueue, currentTrack.id)
+      : currentQueue[(currentIndex + 1) % currentQueue.length];
+    if (next) playTrack(next, currentQueue, false);
   }
 
   function handleSeek(e) {
@@ -201,7 +216,7 @@ export default function App() {
     ) return;
     navigator.mediaSession.metadata = new MediaMetadata({
       title: currentTrack.name,
-      artist: currentTrack.displayArtist,
+      artist: currentTrack.artist,
       album: currentTrack.albumName,
       artwork: [{ src: currentTrack.cover, sizes: "512x512", type: "image/png" }],
     });
@@ -265,7 +280,7 @@ export default function App() {
     return (
       <main className="empty-state">
         <h1>没有找到歌曲</h1>
-        <p>请确认 list.js 已加载并包含歌曲数组。</p>
+        <p>请确认 src/db.json 已正确生成。</p>
       </main>
     );
   }
