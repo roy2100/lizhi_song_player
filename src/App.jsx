@@ -1,10 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
-  FastForward,
   ListMusic,
-  Menu,
-  MessageSquare,
   MoreHorizontal,
   Pause,
   Play,
@@ -97,12 +94,16 @@ function App() {
   const albums = useMemo(() => buildAlbums(tracks), [tracks]);
   const featuredAlbum = useMemo(
     () =>
+      albums.find((album) => album.name === "电声与管弦乐") ||
       albums.reduce((selected, album) => {
         if (!selected) return album;
         return album.tracks.length > selected.tracks.length ? album : selected;
       }, null),
     [albums]
   );
+  const artistCover =
+    albums.find((album) => album.name === "你好，郑州")?.cover ||
+    PLAYER_FALLBACK_COVER;
   const chartTracks = useMemo(() => tracks.slice(0, 12), [tracks]);
 
   const [activeAlbum, setActiveAlbum] = useState(null);
@@ -331,6 +332,7 @@ function App() {
           albums={albums}
           chartTracks={chartTracks}
           featuredAlbum={featuredAlbum}
+          artistCover={artistCover}
           currentTrack={currentTrack}
           isPlaying={isPlaying}
           onOpenAlbum={setActiveAlbum}
@@ -374,13 +376,14 @@ function Home({
   albums,
   chartTracks,
   featuredAlbum,
+  artistCover,
   currentTrack,
   isPlaying,
   onOpenAlbum,
   onPlayTrack,
   onPlayAlbum,
 }) {
-  const heroCover = featuredAlbum?.cover || PLAYER_FALLBACK_COVER;
+  const heroCover = artistCover || PLAYER_FALLBACK_COVER;
 
   return (
     <main className="home-view">
@@ -596,9 +599,6 @@ function PlayerBar({
           <button type="button" onClick={onNext} aria-label="下一首">
             <SkipForward size={21} fill="currentColor" />
           </button>
-          <button className="desktop-only small-skip" type="button" onClick={onNext} aria-label="快进">
-            <FastForward size={18} fill="currentColor" />
-          </button>
           <button
             className={repeatMode !== "off" ? "is-enabled desktop-only repeat-button" : "desktop-only repeat-button"}
             type="button"
@@ -632,9 +632,6 @@ function PlayerBar({
       </div>
 
       <div className="player-extra desktop-only">
-        <MoreHorizontal size={18} />
-        <MessageSquare size={17} />
-        <Menu size={18} />
         <Volume2 size={18} />
         <input
           type="range"

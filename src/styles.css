@@ -157,6 +157,10 @@ button {
   text-align: left;
 }
 
+.chart-item:nth-child(n + 4) {
+  display: none;
+}
+
 .chart-item img {
   width: 48px;
   height: 48px;
@@ -207,18 +211,14 @@ button {
 }
 
 .featured-album {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 42px;
-  align-items: center;
-  gap: 14px;
-  width: 100%;
+  --featured-cover-size: 152px;
+  position: relative;
+  width: var(--featured-cover-size);
 }
 
 .featured-main {
-  display: grid;
-  grid-template-columns: 86px minmax(0, 1fr);
-  align-items: center;
-  gap: 14px;
+  display: block;
+  width: 100%;
   padding: 0;
   border: 0;
   background: transparent;
@@ -226,19 +226,27 @@ button {
 }
 
 .featured-main img {
-  width: 86px;
-  height: 86px;
+  display: block;
+  width: var(--featured-cover-size);
+  height: var(--featured-cover-size);
+  margin-bottom: 9px;
   border-radius: 8px;
   object-fit: cover;
-  box-shadow: 0 12px 28px rgba(29, 29, 31, 0.14);
+  box-shadow: 0 10px 24px rgba(29, 29, 31, 0.11);
 }
 
 .featured-album strong {
-  margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+.featured-album small {
+  display: block;
 }
 
 .featured-play {
+  position: absolute;
+  top: calc(var(--featured-cover-size) - 46px);
+  right: 8px;
   display: grid;
   place-items: center;
   width: 38px;
@@ -246,8 +254,11 @@ button {
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: rgba(242, 242, 247, 0.96);
+  background: rgba(242, 242, 247, 0.88);
   color: var(--accent);
+  box-shadow: 0 8px 20px rgba(29, 29, 31, 0.16);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
 }
 
 .album-rail {
@@ -255,8 +266,8 @@ button {
   grid-auto-columns: 152px;
   grid-auto-flow: column;
   gap: 16px;
-  margin: 0 -18px;
-  padding: 0 18px 12px;
+  margin: 0;
+  padding: 0 0 12px;
   overflow-x: auto;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
@@ -609,14 +620,22 @@ input[type="range"]::-moz-range-thumb {
     column-gap: 28px;
   }
 
+  .chart-item:nth-child(n + 4) {
+    display: grid;
+  }
+
+  .chart-item:nth-child(n + 10) {
+    display: none;
+  }
+
   .featured-album {
-    width: 420px;
+    --featured-cover-size: 172px;
   }
 
   .album-rail {
     grid-auto-columns: 172px;
-    margin-inline: -30px;
-    padding-inline: 30px;
+    margin-inline: 0;
+    padding-inline: 0;
   }
 
   .album-card img {
@@ -711,7 +730,7 @@ input[type="range"]::-moz-range-thumb {
   .player-extra {
     display: grid !important;
     order: 3;
-    grid-template-columns: repeat(4, 22px) 76px;
+    grid-template-columns: 22px 76px;
     align-items: center;
     gap: 8px;
     color: #1d1d1f;
