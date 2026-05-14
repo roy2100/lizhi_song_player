@@ -4,7 +4,7 @@ Apple Music 风格的移动端优先网页播放器，使用 React + Vite 构建
 
 在线访问：https://roy2100.github.io/lizhi_song_player/
 
-## 学习目的与版权声明
+## 版权声明
 
 本项目仅用于前端学习、React/Vite 实践和 UI 交互效果研究，不用于商业用途。
 
@@ -15,8 +15,8 @@ Apple Music 风格的移动端优先网页播放器，使用 React + Vite 构建
 ## 功能
 
 - 移动端优先布局，渐进增强到桌面宽屏
-- 首页：Hero 艺人卡片、播放排行榜、代表专辑、专辑横向滚动列表
-- 专辑详情页：曲目列表 + 时长懒加载
+- 首页：Hero 艺人卡片、播放排行榜、代表专辑、专辑横向滚动列表（按年份排序）
+- 专辑详情页：曲目列表 + 静态时长显示
 - 毛玻璃悬浮播放控制条
 - 播放 / 暂停、上一首 / 下一首、随机播放、顺序 / 单曲 / 关闭循环
 - 进度拖拽、音量控制（桌面）
@@ -30,15 +30,17 @@ Apple Music 风格的移动端优先网页播放器，使用 React + Vite 构建
 - React 19 + Vite
 - react-router-dom（HashRouter）
 - lucide-react（图标）
+- Vitest（单元测试）
 - 原生 CSS，mobile-first
 
 ## 本地开发
 
 ```bash
-npm ci          # 安装依赖（锁定版本）
-npm run dev     # 启动开发服务器（0.0.0.0:5173，局域网可访问）
-npm run build   # 生产构建，输出到 dist/
-npm run preview # 本地预览构建产物（0.0.0.0:4173）
+npm ci           # 安装依赖（锁定版本）
+npm run dev      # 启动开发服务器（0.0.0.0:5173，局域网可访问）
+npm run build    # 生产构建，输出到 dist/
+npm run preview  # 本地预览构建产物（0.0.0.0:4173）
+npm test         # 运行单元测试
 ```
 
 提交前务必运行 `npm run build` 确认无构建错误。
@@ -49,28 +51,42 @@ npm run preview # 本地预览构建产物（0.0.0.0:4173）
 src/
   main.jsx              # 入口，挂载 HashRouter + App
   App.jsx               # 全局状态 + 路由表 + 音频元素 + MediaSession
-  db.json               # 构建时由 list.js 生成的静态歌曲数据
-  utils.js              # 纯函数：数据加载、格式化、随机选曲
+  db.json               # 歌曲数据（唯一数据源，直接编辑）
+  utils.js              # 纯函数：数据规范化、格式化、排序、随机选曲
+  utils.test.js         # 单元测试
   styles.css            # 全部样式，mobile-first
   components/
-    Home.jsx            # 首页（/）
+    AlbumCard.jsx       # 专辑卡片（封面、名称、年份、可选播放按钮）
     AlbumDetail.jsx     # 专辑详情（/album/:albumId）
+    Home.jsx            # 首页（/）
     PlayerBar.jsx       # 底部固定播放控制条
+audio/                  # 本地音频文件（由 CDN 托管，不参与构建）
 ```
 
 ## 数据说明
 
-歌曲数据在构建时由根目录的 `list.js` 解析生成 `src/db.json`，运行时直接 import 静态 JSON，不做任何运行时解析。
+`src/db.json` 是唯一数据源，由 `App.jsx` 直接 `import` 加载，构建时打包进 bundle。
 
-`list.js` 原始格式：
+格式：
 
-```js
-var list = [
-  { name: "歌曲名", artist: "专辑-专辑名", url: "音频地址", cover: "封面地址" }
-];
+```json
+{
+  "albums": [
+    {
+      "name": "专辑名",
+      "cover": "封面 URL",
+      "year": 2018,
+      "tracks": [
+        { "name": "歌曲名", "url": "音频 URL", "duration": 180.5 }
+      ]
+    }
+  ]
+}
 ```
 
-`artist` 字段中 `专辑-` 前缀会被去掉作为专辑名使用，**不要修改 `list.js` 的格式**。
+运行时 `normalizeAlbums()` 将 `db.json` 的紧凑格式展开为完整 track 对象（补充 `id`、`albumName`、`cover`、`artist` 字段）。
+
+音频和封面托管在 GitHub：`raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/...`
 
 ## GitHub Pages 部署
 
@@ -86,21 +102,9 @@ npm ci && GITHUB_PAGES=true npm run build
 
 ## TODO
 
-以下是计划中的体验优化，按优先级排列。
-
-### 功能完整性
-
-- [ ] **全屏播放器**：移动端点击播放栏弹出全屏视图，显示大封面、进度条（含时间文字）、shuffle/repeat 按钮——目前移动端无法操控这两个控件
-- [ ] **播放失败自动跳曲**：音频加载失败后目前只打标记并停播，应自动跳到下一首
-
-### 体验细节
-
+- [ ] **全屏播放器**：移动端点击播放栏弹出全屏视图，显示大封面、进度条、shuffle/repeat 按钮
+- [ ] **播放失败自动跳曲**：音频加载失败后自动跳到下一首
 - [ ] **进度条时间文字**：在进度条旁补充 `当前时间 / 总时长` 文字显示
 - [ ] **动态 `document.title`**：播放中的曲目名实时反映到浏览器 Tab
-- [ ] **音量持久化**：将音量存入 `localStorage`，刷新后恢复上次设置
-- [ ] **图片懒加载**：首页专辑列表和歌单封面加 `loading="lazy"`
-
-### 锦上添花
-
-- [ ] **键盘快捷键**：桌面端 `Space` 暂停 / 播放，`←` / `→` 快进快退 10 秒，`M` 静音
-- [ ] **搜索**：按歌曲名 / 专辑名过滤，直接找到目标曲目
+- [ ] **音量持久化**：将音量存入 `localStorage`，刷新后恢复
+- [ ] **键盘快捷键**：桌面端 `Space` 暂停 / 播放，`←` / `→` 快进快退 10 秒

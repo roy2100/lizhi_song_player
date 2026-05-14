@@ -35,3 +35,27 @@ export function savePlayCounts(counts) {
     localStorage.setItem(PLAY_COUNTS_KEY, JSON.stringify(counts));
   } catch {}
 }
+
+export function normalizeAlbums(rawAlbums) {
+  return rawAlbums.map((album) => ({
+    ...album,
+    tracks: album.tracks.map((t) => ({
+      id: `${album.name}/${t.name}`,
+      name: t.name,
+      url: t.url,
+      duration: t.duration,
+      albumName: album.name,
+      cover: album.cover,
+      artist: ARTIST_NAME,
+    })),
+  }));
+}
+
+export function sortAlbumsByYear(albums) {
+  return [...albums].sort((a, b) => {
+    if (a.year && b.year) return b.year - a.year;
+    if (a.year) return -1;
+    if (b.year) return 1;
+    return 0;
+  });
+}

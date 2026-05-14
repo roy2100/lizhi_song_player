@@ -1,5 +1,5 @@
 import { Play } from "lucide-react";
-import { ARTIST_NAME } from "../utils";
+import { ARTIST_NAME, sortAlbumsByYear } from "../utils";
 import AlbumCard from "./AlbumCard";
 
 export default function Home({
@@ -70,14 +70,7 @@ export default function Home({
       <section className="content-section">
         <h2>专辑</h2>
         <div className="album-rail">
-          {[...albums]
-            .sort((a, b) => {
-              if (a.year && b.year) return b.year - a.year;
-              if (a.year) return -1;
-              if (b.year) return 1;
-              return 0;
-            })
-            .map((album) => (
+          {sortAlbumsByYear(albums).map((album) => (
               <AlbumCard
                 key={album.name}
                 album={album}

@@ -2,9 +2,11 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
   formatTime,
   loadPlayCounts,
+  normalizeAlbums,
   pickRandom,
   PLAY_COUNTS_KEY,
   savePlayCounts,
+  sortAlbumsByYear,
 } from "./utils";
 
 describe("formatTime", () => {
@@ -117,5 +119,88 @@ describe("savePlayCounts", () => {
     });
     expect(() => savePlayCounts({ x: 1 })).not.toThrow();
     vi.restoreAllMocks();
+  });
+});
+
+describe("normalizeAlbums", () => {
+  const raw = [
+    {
+      name: "测试专辑",
+      cover: "https://example.com/cover.png",
+      year: 2018,
+      tracks: [
+        { name: "歌曲A", url: "https://example.com/a.m4a", duration: 180 },
+        { name: "歌曲B", url: "https://example.com/b.m4a", duration: 240 },
+      ],
+    },
+  ];
+
+  it("derives track id from album name and track name", () => {
+    const [album] = normalizeAlbums(raw);
+    expect(album.tracks[0].id).toBe("测试专辑/歌曲A");
+    expect(album.tracks[1].id).toBe("测试专辑/歌曲B");
+  });
+
+  it("sets albumName and cover from parent album", () => {
+    const [album] = normalizeAlbums(raw);
+    album.tracks.forEach((t) => {
+      expect(t.albumName).toBe("测试专辑");
+      expect(t.cover).toBe("https://example.com/cover.png");
+    });
+  });
+
+  it("sets artist to 李志 for every track", () => {
+    const [album] = normalizeAlbums(raw);
+    album.tracks.forEach((t) => expect(t.artist).toBe("李志"));
+  });
+
+  it("preserves duration, name and url", () => {
+    const [album] = normalizeAlbums(raw);
+    expect(album.tracks[0].duration).toBe(180);
+    expect(album.tracks[0].name).toBe("歌曲A");
+    expect(album.tracks[0].url).toBe("https://example.com/a.m4a");
+  });
+
+  it("preserves album-level fields (year, cover)", () => {
+    const [album] = normalizeAlbums(raw);
+    expect(album.year).toBe(2018);
+    expect(album.cover).toBe("https://example.com/cover.png");
+  });
+
+  it("handles multiple albums independently", () => {
+    const twoAlbums = [
+      { name: "A", cover: "", tracks: [{ name: "x", url: "", duration: 1 }] },
+      { name: "B", cover: "", tracks: [{ name: "y", url: "", duration: 2 }] },
+    ];
+    const result = normalizeAlbums(twoAlbums);
+    expect(result[0].tracks[0].id).toBe("A/x");
+    expect(result[1].tracks[0].id).toBe("B/y");
+  });
+});
+
+describe("sortAlbumsByYear", () => {
+  it("sorts by year descending", () => {
+    const albums = [{ name: "A", year: 2010 }, { name: "B", year: 2018 }, { name: "C", year: 2014 }];
+    const sorted = sortAlbumsByYear(albums);
+    expect(sorted.map((a) => a.year)).toEqual([2018, 2014, 2010]);
+  });
+
+  it("puts albums without year after those with year", () => {
+    const albums = [{ name: "X" }, { name: "Y", year: 2015 }, { name: "Z" }];
+    const sorted = sortAlbumsByYear(albums);
+    expect(sorted[0].year).toBe(2015);
+    expect(sorted[1].year).toBeUndefined();
+    expect(sorted[2].year).toBeUndefined();
+  });
+
+  it("does not mutate the original array", () => {
+    const albums = [{ name: "A", year: 2010 }, { name: "B", year: 2020 }];
+    const original = [...albums];
+    sortAlbumsByYear(albums);
+    expect(albums[0].name).toBe(original[0].name);
+  });
+
+  it("handles empty array", () => {
+    expect(sortAlbumsByYear([])).toEqual([]);
   });
 });
