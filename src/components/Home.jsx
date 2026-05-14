@@ -86,7 +86,14 @@ export default function Home({
       <section className="content-section">
         <h2>专辑</h2>
         <div className="album-rail">
-          {albums.map((album) => (
+          {[...albums]
+            .sort((a, b) => {
+              if (a.year && b.year) return b.year - a.year;
+              if (a.year) return -1;
+              if (b.year) return 1;
+              return 0;
+            })
+            .map((album) => (
             <button
               className="album-card"
               type="button"
@@ -95,7 +102,7 @@ export default function Home({
             >
               <img src={album.cover} alt="" />
               <strong>{album.name}</strong>
-              <span>{album.tracks.length} 首歌曲</span>
+              <span>{album.year ? `${album.year}年` : ""}</span>
             </button>
           ))}
         </div>
