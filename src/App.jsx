@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import db from "./db.json";
 import {
+  ARTIST_NAME,
   FALLBACK_COVER,
   loadPlayCounts,
   pickRandom,
@@ -39,8 +40,19 @@ function updateMediaSessionPosition(audio) {
 export default function App() {
   const navigate = useNavigate();
   const audioRef = useRef(null);
-  const tracks = useMemo(() => db.tracks, []);
-  const albums = useMemo(() => db.albums, []);
+  const albums = useMemo(() =>
+    db.albums.map((album) => ({
+      ...album,
+      tracks: album.tracks.map((t) => ({
+        id: `${album.name}/${t.name}`,
+        name: t.name,
+        url: t.url,
+        albumName: album.name,
+        cover: album.cover,
+        artist: ARTIST_NAME,
+      })),
+    })), []);
+  const tracks = useMemo(() => albums.flatMap((a) => a.tracks), [albums]);
 
   const featuredAlbum = useMemo(
     () =>
