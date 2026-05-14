@@ -63,7 +63,6 @@ export default function Home({
           <AlbumCard
             album={featuredAlbum}
             onOpen={() => onOpenAlbum(featuredAlbum)}
-            onPlay={() => onPlayAlbum(featuredAlbum)}
           />
         </section>
       )}
@@ -83,7 +82,6 @@ export default function Home({
                 key={album.name}
                 album={album}
                 onOpen={() => onOpenAlbum(album)}
-                onPlay={() => onPlayAlbum(album)}
               />
             ))}
         </div>
