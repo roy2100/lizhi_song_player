@@ -6,31 +6,38 @@
       "tracks": [
         {
           "name": "倒影",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/倒影.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/倒影.m4a",
+          "duration": 165.147
         },
         {
           "name": "尽头",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/尽头.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/尽头.m4a",
+          "duration": 287.818
         },
         {
           "name": "山阴路的夏天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/山阴路的夏天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/山阴路的夏天.m4a",
+          "duration": 314.881
         },
         {
           "name": "忽然",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/忽然.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/忽然.m4a",
+          "duration": 193.255
         },
         {
           "name": "董卓瑶",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/董卓瑶.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/董卓瑶.m4a",
+          "duration": 197.434
         },
         {
           "name": "阿兰",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/阿兰.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/108个关键词/阿兰.m4a",
+          "duration": 261.852
         },
         {
           "name": "青春",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.1-aac/audio/108个关键词/青春.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.1-aac/audio/108个关键词/青春.m4a",
+          "duration": 164.306
         }
       ]
     },
@@ -40,35 +47,43 @@
       "tracks": [
         {
           "name": "不多",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/不多.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/不多.m4a",
+          "duration": 236.566
         },
         {
           "name": "大象",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/大象.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/大象.m4a",
+          "duration": 326.61
         },
         {
           "name": "好威武支持有希望",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/好威武支持有希望.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/好威武支持有希望.m4a",
+          "duration": 360.099
         },
         {
           "name": "定西",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/定西.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/定西.m4a",
+          "duration": 295.89
         },
         {
           "name": "方式",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/方式.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/方式.m4a",
+          "duration": 245.865
         },
         {
           "name": "热河",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/热河.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/热河.m4a",
+          "duration": 406.544
         },
         {
           "name": "看见",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/看见.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/看见.m4a",
+          "duration": 253.519
         },
         {
           "name": "鼠说",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/鼠说.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/1701/鼠说.m4a",
+          "duration": 317.206
         }
       ]
     },
@@ -78,39 +93,48 @@
       "tracks": [
         {
           "name": "Hey Jude",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/Hey Jude.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/Hey Jude.m4a",
+          "duration": 263.602
         },
         {
           "name": "兰花草",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/兰花草.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/兰花草.m4a",
+          "duration": 164.05
         },
         {
           "name": "小螺号",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/小螺号.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/小螺号.m4a",
+          "duration": 211.41
         },
         {
           "name": "数鸭子",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/数鸭子.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/数鸭子.m4a",
+          "duration": 135.42
         },
         {
           "name": "朋友越多越快乐",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/朋友越多越快乐.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/朋友越多越快乐.m4a",
+          "duration": 141.82
         },
         {
           "name": "歌声与微笑",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/歌声与微笑.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/歌声与微笑.m4a",
+          "duration": 190.407
         },
         {
           "name": "蜗牛与黄鹂鸟",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/蜗牛与黄鹂鸟.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/蜗牛与黄鹂鸟.m4a",
+          "duration": 155.22
         },
         {
           "name": "送别",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/送别.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/送别.m4a",
+          "duration": 202.45
         },
         {
           "name": "采蘑菇的小姑娘",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/采蘑菇的小姑娘.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/8/采蘑菇的小姑娘.m4a",
+          "duration": 132.729
         }
       ]
     },
@@ -120,39 +144,48 @@
       "tracks": [
         {
           "name": "下雨",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/下雨.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/下雨.m4a",
+          "duration": 307.018
         },
         {
           "name": "你的早晨",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/你的早晨.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/你的早晨.m4a",
+          "duration": 247.642
         },
         {
           "name": "女神",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/女神.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/女神.m4a",
+          "duration": 300.043
         },
         {
           "name": "寻找",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/寻找.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/寻找.m4a",
+          "duration": 224.889
         },
         {
           "name": "尽头",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/尽头.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/尽头.m4a",
+          "duration": 274.156
         },
         {
           "name": "山阴路的夏天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/山阴路的夏天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/山阴路的夏天.m4a",
+          "duration": 278.048
         },
         {
           "name": "日",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/日.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/日.m4a",
+          "duration": 162.744
         },
         {
           "name": "杭州",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/杭州.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/杭州.m4a",
+          "duration": 238.185
         },
         {
           "name": "门",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/门.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/门.m4a",
+          "duration": 386.77
         }
       ]
     },
@@ -162,99 +195,123 @@
       "tracks": [
         {
           "name": "1990的春天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/1990的春天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/1990的春天.m4a",
+          "duration": 306.703
         },
         {
           "name": "Z结尾",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/Z结尾.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/Z结尾.m4a",
+          "duration": 64.653
         },
         {
           "name": "关于郑州的记忆",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/关于郑州的记忆.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/关于郑州的记忆.m4a",
+          "duration": 238.263
         },
         {
           "name": "和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/和你在一起.m4a",
+          "duration": 236.46
         },
         {
           "name": "喀纳斯",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/喀纳斯.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/喀纳斯.m4a",
+          "duration": 270.524
         },
         {
           "name": "天空之城",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/天空之城.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/天空之城.m4a",
+          "duration": 215.092
         },
         {
           "name": "女神",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/女神.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/女神.m4a",
+          "duration": 293.276
         },
         {
           "name": "她",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/她.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/她.m4a",
+          "duration": 317.048
         },
         {
           "name": "家乡",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/家乡.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/家乡.m4a",
+          "duration": 376.398
         },
         {
           "name": "寻找",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/寻找.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/寻找.m4a",
+          "duration": 236.121
         },
         {
           "name": "尽头",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/尽头.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/尽头.m4a",
+          "duration": 287.765
         },
         {
           "name": "我们不能失去信仰",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/我们不能失去信仰.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/我们不能失去信仰.m4a",
+          "duration": 256.836
         },
         {
           "name": "斜",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/斜.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/斜.m4a",
+          "duration": 207.49
         },
         {
           "name": "杭州",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/杭州.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/杭州.m4a",
+          "duration": 227.291
         },
         {
           "name": "海的女儿",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/海的女儿.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/海的女儿.m4a",
+          "duration": 301.348
         },
         {
           "name": "离婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/离婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/离婚.m4a",
+          "duration": 362.997
         },
         {
           "name": "秋天的老狼",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/秋天的老狼.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/秋天的老狼.m4a",
+          "duration": 255.738
         },
         {
           "name": "红色气球",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/红色气球.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/红色气球.m4a",
+          "duration": 281.626
         },
         {
           "name": "结婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/结婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/结婚.m4a",
+          "duration": 426.423
         },
         {
           "name": "翁庆年的六英镑",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/翁庆年的六英镑.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/翁庆年的六英镑.m4a",
+          "duration": 256.052
         },
         {
           "name": "苍井空",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/苍井空.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/苍井空.m4a",
+          "duration": 252.865
         },
         {
           "name": "被禁忌的游戏",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/被禁忌的游戏.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/被禁忌的游戏.m4a",
+          "duration": 273.397
         },
         {
           "name": "门",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/门.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/门.m4a",
+          "duration": 428.93
         },
         {
           "name": "青春",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/青春.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/Imagine-2011/青春.m4a",
+          "duration": 191.974
         }
       ]
     },
@@ -264,39 +321,48 @@
       "tracks": [
         {
           "name": "墙上的向日葵",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/墙上的向日葵.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/墙上的向日葵.m4a",
+          "duration": 482.247
         },
         {
           "name": "妈妈",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/妈妈.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/妈妈.m4a",
+          "duration": 298.424
         },
         {
           "name": "定西",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/定西.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/定西.m4a",
+          "duration": 301.584
         },
         {
           "name": "山阴路的夏天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/山阴路的夏天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/山阴路的夏天.m4a",
+          "duration": 313.183
         },
         {
           "name": "方式",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/方式.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/方式.m4a",
+          "duration": 261.434
         },
         {
           "name": "来了",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/来了.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/来了.m4a",
+          "duration": 286.015
         },
         {
           "name": "杭州",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/杭州.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/杭州.m4a",
+          "duration": 247.615
         },
         {
           "name": "这个世界会好吗",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/这个世界会好吗.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/这个世界会好吗.m4a",
+          "duration": 265.431
         },
         {
           "name": "铅笔",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/铅笔.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/io/铅笔.m4a",
+          "duration": 374.231
         }
       ]
     },
@@ -306,107 +372,133 @@
       "tracks": [
         {
           "name": "他们",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/他们.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/他们.m4a",
+          "duration": 268.695
         },
         {
           "name": "倒影",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/倒影.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/倒影.m4a",
+          "duration": 185.626
         },
         {
           "name": "冬妮娅",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/冬妮娅.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/冬妮娅.m4a",
+          "duration": 233.639
         },
         {
           "name": "听妈妈讲过去的事情",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/听妈妈讲过去的事情.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/听妈妈讲过去的事情.m4a",
+          "duration": 108.904
         },
         {
           "name": "天空之城",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/天空之城.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/天空之城.m4a",
+          "duration": 255.347
         },
         {
           "name": "妈妈",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/妈妈.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/妈妈.m4a",
+          "duration": 227.317
         },
         {
           "name": "家乡",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/家乡.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/家乡.m4a",
+          "duration": 315.872
         },
         {
           "name": "广场",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/广场.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/广场.m4a",
+          "duration": 240.77
         },
         {
           "name": "恋恋风尘",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/恋恋风尘.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/恋恋风尘.m4a",
+          "duration": 278.152
         },
         {
           "name": "意味",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/意味.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/意味.m4a",
+          "duration": 194.403
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/春末的南方城市.m4a",
+          "duration": 223.425
         },
         {
           "name": "来了",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/来了.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/来了.m4a",
+          "duration": 420.78
         },
         {
           "name": "来自我心",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/来自我心.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/来自我心.m4a",
+          "duration": 252.055
         },
         {
           "name": "狐狸",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/狐狸.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/狐狸.m4a",
+          "duration": 289.358
         },
         {
           "name": "结婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/结婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/结婚.m4a",
+          "duration": 337.972
         },
         {
           "name": "苍井空",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/苍井空.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/苍井空.m4a",
+          "duration": 252.63
         },
         {
           "name": "董卓瑶",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/董卓瑶.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/董卓瑶.m4a",
+          "duration": 207.098
         },
         {
           "name": "虎口脱险",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/虎口脱险.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/虎口脱险.m4a",
+          "duration": 311.223
         },
         {
           "name": "被禁忌的游戏",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/被禁忌的游戏.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/被禁忌的游戏.m4a",
+          "duration": 277.185
         },
         {
           "name": "达摩流浪者",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/达摩流浪者.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/达摩流浪者.m4a",
+          "duration": 267.441
         },
         {
           "name": "这个世界会好吗",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/这个世界会好吗.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/这个世界会好吗.m4a",
+          "duration": 240.013
         },
         {
           "name": "陀螺",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/陀螺.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/陀螺.m4a",
+          "duration": 360.568
         },
         {
           "name": "青春",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/青春.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/青春.m4a",
+          "duration": 154.201
         },
         {
           "name": "鸟语",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/鸟语.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/鸟语.m4a",
+          "duration": 415.059
         },
         {
           "name": "鸵鸟",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/鸵鸟.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/鸵鸟.m4a",
+          "duration": 278.987
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/二零零九年十月十六日事件/黑色信封.m4a",
+          "duration": 323.787
         }
       ]
     },
@@ -416,43 +508,53 @@
       "tracks": [
         {
           "name": "关于郑州的记忆",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/关于郑州的记忆.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/关于郑州的记忆.m4a",
+          "duration": 228.154
         },
         {
           "name": "墙上的向日葵",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/墙上的向日葵.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/墙上的向日葵.m4a",
+          "duration": 296.151
         },
         {
           "name": "夜",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/夜.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/夜.m4a",
+          "duration": 274.835
         },
         {
           "name": "她",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/她.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/她.m4a",
+          "duration": 247.485
         },
         {
           "name": "带亲",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/带亲.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/带亲.m4a",
+          "duration": 222.12
         },
         {
           "name": "忽然",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/忽然.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/忽然.m4a",
+          "duration": 126.878
         },
         {
           "name": "秋天的老狼",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/秋天的老狼.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/秋天的老狼.m4a",
+          "duration": 236.304
         },
         {
           "name": "路",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/路.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/路.m4a",
+          "duration": 143.361
         },
         {
           "name": "铅笔",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/铅笔.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/铅笔.m4a",
+          "duration": 274.652
         },
         {
           "name": "铅笔(吉松浩版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/铅笔(吉松浩版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/你好，郑州/铅笔(吉松浩版).m4a",
+          "duration": 276.585
         }
       ]
     },
@@ -462,39 +564,48 @@
       "tracks": [
         {
           "name": "你的早晨",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/你的早晨.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/你的早晨.m4a",
+          "duration": 339.984
         },
         {
           "name": "卡夫卡",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/卡夫卡.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/卡夫卡.m4a",
+          "duration": 276.611
         },
         {
           "name": "和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/和你在一起.m4a",
+          "duration": 280.033
         },
         {
           "name": "墙上的向日葵",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/墙上的向日葵.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/墙上的向日葵.m4a",
+          "duration": 405.264
         },
         {
           "name": "定西",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/定西.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/定西.m4a",
+          "duration": 265.196
         },
         {
           "name": "尽头",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/尽头.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/尽头.m4a",
+          "duration": 206.133
         },
         {
           "name": "忽然",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/忽然.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/忽然.m4a",
+          "duration": 266.502
         },
         {
           "name": "普希金",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/普希金.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/普希金.m4a",
+          "duration": 273.294
         },
         {
           "name": "这个世界会好吗",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/这个世界会好吗.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/动静/这个世界会好吗.m4a",
+          "duration": 314.097
         }
       ]
     },
@@ -504,79 +615,98 @@
       "tracks": [
         {
           "name": "1990年的春天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/1990年的春天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/1990年的春天.m4a",
+          "duration": 330.136
         },
         {
           "name": "下雨",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/下雨.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/下雨.m4a",
+          "duration": 286.564
         },
         {
           "name": "和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/和你在一起.m4a",
+          "duration": 261.748
         },
         {
           "name": "墙上的向日葵",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/墙上的向日葵.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/墙上的向日葵.m4a",
+          "duration": 445.806
         },
         {
           "name": "妈妈",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/妈妈.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/妈妈.m4a",
+          "duration": 253.65
         },
         {
           "name": "山阴路的夏天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/山阴路的夏天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/山阴路的夏天.m4a",
+          "duration": 337.973
         },
         {
           "name": "意味",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/意味.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/意味.m4a",
+          "duration": 329.326
         },
         {
           "name": "斜",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/斜.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/斜.m4a",
+          "duration": 202.371
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/春末的南方城市.m4a",
+          "duration": 277.003
         },
         {
           "name": "来了",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/来了.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/来了.m4a",
+          "duration": 428.644
         },
         {
           "name": "离婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/离婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/离婚.m4a",
+          "duration": 280.033
         },
         {
           "name": "秋天的老狼",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/秋天的老狼.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/秋天的老狼.m4a",
+          "duration": 432.798
         },
         {
           "name": "翁庆年的六英镑",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/翁庆年的六英镑.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/翁庆年的六英镑.m4a",
+          "duration": 269.976
         },
         {
           "name": "董卓瑶",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/董卓瑶.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/董卓瑶.m4a",
+          "duration": 305.006
         },
         {
           "name": "被禁忌的游戏",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/被禁忌的游戏.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/被禁忌的游戏.m4a",
+          "duration": 498.6
         },
         {
           "name": "这个世界会好吗",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/这个世界会好吗.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/这个世界会好吗.m4a",
+          "duration": 303.779
         },
         {
           "name": "铅笔",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/铅笔.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/铅笔.m4a",
+          "duration": 244.22
         },
         {
           "name": "门",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/门.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/门.m4a",
+          "duration": 397.976
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/勾三搭四/黑色信封.m4a",
+          "duration": 327.237
         }
       ]
     },
@@ -586,51 +716,63 @@
       "tracks": [
         {
           "name": "关于郑州的记忆",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/关于郑州的记忆.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/关于郑州的记忆.m4a",
+          "duration": 287.374
         },
         {
           "name": "大象",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/大象.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/大象.m4a",
+          "duration": 340.69
         },
         {
           "name": "定西",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/定西.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/定西.m4a",
+          "duration": 473.94
         },
         {
           "name": "山阴路的夏天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/山阴路的夏天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/山阴路的夏天.m4a",
+          "duration": 343.433
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/春末的南方城市.m4a",
+          "duration": 404.481
         },
         {
           "name": "杭州",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/杭州.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/杭州.m4a",
+          "duration": 222.407
         },
         {
           "name": "热河",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/热河.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/热河.m4a",
+          "duration": 364.696
         },
         {
           "name": "结婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/结婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/结婚.m4a",
+          "duration": 420.964
         },
         {
           "name": "这个世界会好吗",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/这个世界会好吗.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/这个世界会好吗.m4a",
+          "duration": 273.686
         },
         {
           "name": "鸵鸟",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/鸵鸟.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/鸵鸟.m4a",
+          "duration": 259.031
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/黑色信封.m4a",
+          "duration": 280.216
         },
         {
           "name": "鼠说",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/鼠说.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/北京不插电/鼠说.m4a",
+          "duration": 485.069
         }
       ]
     },
@@ -640,35 +782,43 @@
       "tracks": [
         {
           "name": "一个夜晚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/一个夜晚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/一个夜晚.m4a",
+          "duration": 281.575
         },
         {
           "name": "一头偶像",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/一头偶像.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/一头偶像.m4a",
+          "duration": 222.616
         },
         {
           "name": "你好明天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/你好明天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/你好明天.m4a",
+          "duration": 267.495
         },
         {
           "name": "克兰河",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/克兰河.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/克兰河.m4a",
+          "duration": 360.386
         },
         {
           "name": "哦吼",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/哦吼.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/哦吼.m4a",
+          "duration": 243.671
         },
         {
           "name": "在每一条伤心的应天大街上",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/在每一条伤心的应天大街上.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/在每一条伤心的应天大街上.m4a",
+          "duration": 429.689
         },
         {
           "name": "彩色派对",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/彩色派对.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/彩色派对.m4a",
+          "duration": 208.928
         },
         {
           "name": "死人",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/死人.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/在每一条伤心的应天大街上/死人.m4a",
+          "duration": 289.464
         }
       ]
     },
@@ -678,51 +828,63 @@
       "tracks": [
         {
           "name": "和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/和你在一起.m4a",
+          "duration": 259.606
         },
         {
           "name": "回答",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/回答.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/回答.m4a",
+          "duration": 378.378
         },
         {
           "name": "墙上的向日葵",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/墙上的向日葵.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/墙上的向日葵.m4a",
+          "duration": 465.045
         },
         {
           "name": "大象",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/大象.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/大象.m4a",
+          "duration": 409.514
         },
         {
           "name": "定西",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/定西.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/定西.m4a",
+          "duration": 363.733
         },
         {
           "name": "尽头",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/尽头.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/尽头.m4a",
+          "duration": 258.538
         },
         {
           "name": "序曲",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/序曲.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/序曲.m4a",
+          "duration": 289.756
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/春末的南方城市.m4a",
+          "duration": 256.821
         },
         {
           "name": "杭州",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/杭州.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/杭州.m4a",
+          "duration": 331.411
         },
         {
           "name": "铅笔",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/铅笔.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/铅笔.m4a",
+          "duration": 312.432
         },
         {
           "name": "门",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/门.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/门.m4a",
+          "duration": 402.581
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/家/黑色信封.m4a",
+          "duration": 333.952
         }
       ]
     },
@@ -732,67 +894,83 @@
       "tracks": [
         {
           "name": "九月",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/九月.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/九月.m4a",
+          "duration": 264.987
         },
         {
           "name": "他们",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/他们.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/他们.m4a",
+          "duration": 53.264
         },
         {
           "name": "卡夫卡",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/卡夫卡.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/卡夫卡.m4a",
+          "duration": 204.331
         },
         {
           "name": "和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/和你在一起.m4a",
+          "duration": 231.106
         },
         {
           "name": "想起了他",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/想起了他.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/想起了他.m4a",
+          "duration": 775.707
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/春末的南方城市.m4a",
+          "duration": 200.7
         },
         {
           "name": "暧昧",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/暧昧.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/暧昧.m4a",
+          "duration": 194.378
         },
         {
           "name": "月亮代表我的心",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/月亮代表我的心.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/月亮代表我的心.m4a",
+          "duration": 109.611
         },
         {
           "name": "来了",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/来了.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/来了.m4a",
+          "duration": 323.423
         },
         {
           "name": "红色气球",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/红色气球.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/红色气球.m4a",
+          "duration": 221.101
         },
         {
           "name": "董卓瑶",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/董卓瑶.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/董卓瑶.m4a",
+          "duration": 199.446
         },
         {
           "name": "被禁忌的游戏",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/被禁忌的游戏.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/被禁忌的游戏.m4a",
+          "duration": 330.711
         },
         {
           "name": "这个世界会好吗",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/这个世界会好吗.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/这个世界会好吗.m4a",
+          "duration": 256.758
         },
         {
           "name": "阿兰",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/阿兰.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/阿兰.m4a",
+          "duration": 215.485
         },
         {
           "name": "青春",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/青春.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/青春.m4a",
+          "duration": 143.57
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/工体东路没有人/黑色信封.m4a",
+          "duration": 288.993
         }
       ]
     },
@@ -802,59 +980,73 @@
       "tracks": [
         {
           "name": "地方 (2015动静版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/地方 (2015动静版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/地方 (2015动静版).m4a",
+          "duration": 361.13
         },
         {
           "name": "广场",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场.m4a",
+          "duration": 240.77
         },
         {
           "name": "广场（108关键词）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（108关键词）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（108关键词）.m4a",
+          "duration": 318.355
         },
         {
           "name": "广场（2009 我们也爱南京）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2009 我们也爱南京）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2009 我们也爱南京）.m4a",
+          "duration": 240.77
         },
         {
           "name": "广场（2011 Imagine）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2011 Imagine）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2011 Imagine）.m4a",
+          "duration": 296.907
         },
         {
           "name": "广场（2013 108关键词）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2013 108关键词）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2013 108关键词）.m4a",
+          "duration": 318.355
         },
         {
           "name": "广场（2014 io）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2014 io）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（2014 io）.m4a",
+          "duration": 281.449
         },
         {
           "name": "广场（B&B专辑）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（B&B专辑）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（B&B专辑）.m4a",
+          "duration": 251.454
         },
         {
           "name": "广场（原版）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（原版）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（原版）.m4a",
+          "duration": 251.455
         },
         {
           "name": "广场（工体东路没有人）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（工体东路没有人）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（工体东路没有人）.m4a",
+          "duration": 198.009
         },
         {
           "name": "广场（热门华语271）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（热门华语271）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（热门华语271）.m4a",
+          "duration": 225.908
         },
         {
           "name": "广场（疆进酒）",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（疆进酒）.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/广场（疆进酒）.m4a",
+          "duration": 341.395
         },
         {
           "name": "时光飘散成烟 - 广场-在新疆和张玮玮",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/时光飘散成烟 - 广场-在新疆和张玮玮.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/时光飘散成烟 - 广场-在新疆和张玮玮.m4a",
+          "duration": 341.395
         },
         {
           "name": "时光飘散成烟 - 广场（原版）(2)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/时光飘散成烟 - 广场（原版）(2).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/广场合集/时光飘散成烟 - 广场（原版）(2).m4a",
+          "duration": 251.455
         }
       ]
     },
@@ -864,31 +1056,38 @@
       "tracks": [
         {
           "name": "1990年的春天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/1990年的春天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/1990年的春天.m4a",
+          "duration": 302.733
         },
         {
           "name": "他们、新年好",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/他们、新年好.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/他们、新年好.m4a",
+          "duration": 319.085
         },
         {
           "name": "关于郑州的记忆",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/关于郑州的记忆.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/关于郑州的记忆.m4a",
+          "duration": 229.094
         },
         {
           "name": "她、鹿港小镇",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/她、鹿港小镇.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/她、鹿港小镇.m4a",
+          "duration": 335.438
         },
         {
           "name": "开场",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/开场.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/开场.m4a",
+          "duration": 159.582
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/春末的南方城市.m4a",
+          "duration": 233.195
         },
         {
           "name": "翁庆年的六英镑",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/翁庆年的六英镑.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我们也爱南京/翁庆年的六英镑.m4a",
+          "duration": 257.724
         }
       ]
     },
@@ -898,67 +1097,83 @@
       "tracks": [
         {
           "name": "1990年的春天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/1990年的春天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/1990年的春天.m4a",
+          "duration": 269.506
         },
         {
           "name": "倒影",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/倒影.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/倒影.m4a",
+          "duration": 182.884
         },
         {
           "name": "再见",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/再见.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/再见.m4a",
+          "duration": 88.895
         },
         {
           "name": "冬妮娅",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/冬妮娅.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/冬妮娅.m4a",
+          "duration": 232.438
         },
         {
           "name": "听妈妈讲那过去的事情",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/听妈妈讲那过去的事情.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/听妈妈讲那过去的事情.m4a",
+          "duration": 169.718
         },
         {
           "name": "在那遥远的地方",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/在那遥远的地方.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/在那遥远的地方.m4a",
+          "duration": 171.808
         },
         {
           "name": "天空之城",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/天空之城.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/天空之城.m4a",
+          "duration": 223.034
         },
         {
           "name": "家乡",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/家乡.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/家乡.m4a",
+          "duration": 343.302
         },
         {
           "name": "思念观世音",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/思念观世音.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/思念观世音.m4a",
+          "duration": 206.473
         },
         {
           "name": "意味",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/意味.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/意味.m4a",
+          "duration": 201.718
         },
         {
           "name": "爱",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/爱.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/爱.m4a",
+          "duration": 200.83
         },
         {
           "name": "米店",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/米店.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/米店.m4a",
+          "duration": 211.018
         },
         {
           "name": "结婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/结婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/结婚.m4a",
+          "duration": 352.628
         },
         {
           "name": "美丽的梭罗河",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/美丽的梭罗河.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/美丽的梭罗河.m4a",
+          "duration": 149.343
         },
         {
           "name": "苍井空",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/苍井空.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/苍井空.m4a",
+          "duration": 260.311
         },
         {
           "name": "鸵鸟",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/鸵鸟.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/我爱南京/鸵鸟.m4a",
+          "duration": 267.207
         }
       ]
     },
@@ -968,39 +1183,48 @@
       "tracks": [
         {
           "name": "你离开了南京，从此没有人和我说话",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/你离开了南京，从此没有人和我说话.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/你离开了南京，从此没有人和我说话.m4a",
+          "duration": 71.838
         },
         {
           "name": "广场",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/广场.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/广场.m4a",
+          "duration": 251.455
         },
         {
           "name": "想起了她",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/想起了她.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/想起了她.m4a",
+          "duration": 273.503
         },
         {
           "name": "斜",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/斜.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/斜.m4a",
+          "duration": 216.765
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/春末的南方城市.m4a",
+          "duration": 246.753
         },
         {
           "name": "暧昧",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/暧昧.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/暧昧.m4a",
+          "duration": 217.653
         },
         {
           "name": "来了",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/来了.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/来了.m4a",
+          "duration": 311.563
         },
         {
           "name": "梵高先生",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/梵高先生.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/梵高先生.m4a",
+          "duration": 249.758
         },
         {
           "name": "董卓瑶",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/董卓瑶.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/梵高先生/董卓瑶.m4a",
+          "duration": 197.8
         }
       ]
     },
@@ -1010,51 +1234,63 @@
       "tracks": [
         {
           "name": "和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/和你在一起.m4a",
+          "duration": 259.657
         },
         {
           "name": "回答",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/回答.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/回答.m4a",
+          "duration": 378.41
         },
         {
           "name": "墙上的向日葵",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/墙上的向日葵.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/墙上的向日葵.m4a",
+          "duration": 465.084
         },
         {
           "name": "大象",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/大象.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/大象.m4a",
+          "duration": 409.547
         },
         {
           "name": "定西",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/定西.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/定西.m4a",
+          "duration": 363.781
         },
         {
           "name": "尽头",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/尽头.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/尽头.m4a",
+          "duration": 258.586
         },
         {
           "name": "序曲",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/序曲.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/序曲.m4a",
+          "duration": 289.802
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/春末的南方城市.m4a",
+          "duration": 256.862
         },
         {
           "name": "杭州",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/杭州.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/杭州.m4a",
+          "duration": 331.441
         },
         {
           "name": "铅笔",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/铅笔.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/铅笔.m4a",
+          "duration": 312.476
         },
         {
           "name": "门",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/门.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/门.m4a",
+          "duration": 402.625
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐/黑色信封.m4a",
+          "duration": 334.001
         }
       ]
     },
@@ -1064,39 +1300,48 @@
       "tracks": [
         {
           "name": "一头偶像 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/一头偶像 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/一头偶像 (相信未来版).m4a",
+          "duration": 289.397
         },
         {
           "name": "你好明天 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/你好明天 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/你好明天 (相信未来版).m4a",
+          "duration": 307.221
         },
         {
           "name": "哦吼 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/哦吼 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/哦吼 (相信未来版).m4a",
+          "duration": 324.794
         },
         {
           "name": "天空之城 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/天空之城 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/天空之城 (相信未来版).m4a",
+          "duration": 291.253
         },
         {
           "name": "家乡 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/家乡 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/家乡 (相信未来版).m4a",
+          "duration": 425.834
         },
         {
           "name": "寻找 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/寻找 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/寻找 (相信未来版).m4a",
+          "duration": 259.61
         },
         {
           "name": "山阴路的夏天 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/山阴路的夏天 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/山阴路的夏天 (相信未来版).m4a",
+          "duration": 289.05
         },
         {
           "name": "相信未来序曲 (乐曲)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/相信未来序曲 (乐曲).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/相信未来序曲 (乐曲).m4a",
+          "duration": 306.443
         },
         {
           "name": "这个世界会好吗 (相信未来版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/这个世界会好吗 (相信未来版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/电声与管弦乐II/这个世界会好吗 (相信未来版).m4a",
+          "duration": 374.394
         }
       ]
     },
@@ -1106,43 +1351,53 @@
       "tracks": [
         {
           "name": "下雨",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/下雨.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/下雨.m4a",
+          "duration": 332.785
         },
         {
           "name": "你离开了南京，从此没有人和我说话",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/你离开了南京，从此没有人和我说话.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/你离开了南京，从此没有人和我说话.m4a",
+          "duration": 124.657
         },
         {
           "name": "春末的南方城市",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/春末的南方城市.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/春末的南方城市.m4a",
+          "duration": 247.668
         },
         {
           "name": "梵高先生",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/梵高先生.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/梵高先生.m4a",
+          "duration": 166.636
         },
         {
           "name": "热河",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/热河.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/热河.m4a",
+          "duration": 484.52
         },
         {
           "name": "看见",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/看见.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/看见.m4a",
+          "duration": 139.991
         },
         {
           "name": "离婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/离婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/离婚.m4a",
+          "duration": 289.176
         },
         {
           "name": "苍井空",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/苍井空.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/苍井空.m4a",
+          "duration": 307.566
         },
         {
           "name": "董卓瑶",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/董卓瑶.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/董卓瑶.m4a",
+          "duration": 278.884
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/看见/黑色信封.m4a",
+          "duration": 292.233
         }
       ]
     },
@@ -1152,35 +1407,43 @@
       "tracks": [
         {
           "name": "卡夫卡",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/卡夫卡.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/卡夫卡.m4a",
+          "duration": 176.902
         },
         {
           "name": "欢愉",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/欢愉.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/欢愉.m4a",
+          "duration": 207.465
         },
         {
           "name": "离婚",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/离婚.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/离婚.m4a",
+          "duration": 295.838
         },
         {
           "name": "红色气球",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/红色气球.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/红色气球.m4a",
+          "duration": 173.375
         },
         {
           "name": "罗庄的冬天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/罗庄的冬天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/罗庄的冬天.m4a",
+          "duration": 410.907
         },
         {
           "name": "被禁忌的游戏",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/被禁忌的游戏.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/被禁忌的游戏.m4a",
+          "duration": 377.836
         },
         {
           "name": "阿兰",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/阿兰.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/阿兰.m4a",
+          "duration": 166.113
         },
         {
           "name": "黑色信封",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/黑色信封.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/被禁忌的游戏/黑色信封.m4a",
+          "duration": 287.269
         }
       ]
     },
@@ -1190,43 +1453,53 @@
       "tracks": [
         {
           "name": "交河",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/交河.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/交河.m4a",
+          "duration": 218.437
         },
         {
           "name": "人民不需要自由",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/人民不需要自由.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/人民不需要自由.m4a",
+          "duration": 280.5
         },
         {
           "name": "他们",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/他们.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/他们.m4a",
+          "duration": 89.496
         },
         {
           "name": "和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/和你在一起.m4a",
+          "duration": 251.952
         },
         {
           "name": "喀纳斯",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/喀纳斯.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/喀纳斯.m4a",
+          "duration": 320.001
         },
         {
           "name": "妈妈",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/妈妈.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/妈妈.m4a",
+          "duration": 244.115
         },
         {
           "name": "我们不能失去信仰—献给刘艺",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/我们不能失去信仰—献给刘艺.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/我们不能失去信仰—献给刘艺.m4a",
+          "duration": 251.926
         },
         {
           "name": "李志- 这个世界会好吗",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/李志- 这个世界会好吗.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/李志- 这个世界会好吗.m4a",
+          "duration": 240.039
         },
         {
           "name": "海的女儿",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/海的女儿.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/海的女儿.m4a",
+          "duration": 210.94
         },
         {
           "name": "翁庆年的六英镑",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/翁庆年的六英镑.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/这个世界会好吗/翁庆年的六英镑.m4a",
+          "duration": 256.497
         }
       ]
     },
@@ -1236,75 +1509,93 @@
       "tracks": [
         {
           "name": "一个夜晚---李志",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/一个夜晚---李志.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/一个夜晚---李志.m4a",
+          "duration": 281.888
         },
         {
           "name": "两只HipHop山羊织毛衣",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/两只HipHop山羊织毛衣.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/两只HipHop山羊织毛衣.m4a",
+          "duration": 119.119
         },
         {
           "name": "妈妈",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/妈妈.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/妈妈.m4a",
+          "duration": 246.675
         },
         {
           "name": "帐号被人注销了 - 《一起摇摆》 李志团队",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/帐号被人注销了 - 《一起摇摆》 李志团队.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/帐号被人注销了 - 《一起摇摆》 李志团队.m4a",
+          "duration": 251.036
         },
         {
           "name": "撒娇 - 在劫难逃",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/撒娇 - 在劫难逃.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/撒娇 - 在劫难逃.m4a",
+          "duration": 319.452
         },
         {
           "name": "撒娇 - 虎口脱险",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/撒娇 - 虎口脱险.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/撒娇 - 虎口脱险.m4a",
+          "duration": 309.055
         },
         {
           "name": "李志-红色气球 (2009现场版)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/李志-红色气球 (2009现场版).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/李志-红色气球 (2009现场版).m4a",
+          "duration": 221.152
         },
         {
           "name": "李志,卡列宁 - 突如其来的夏天",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/李志,卡列宁 - 突如其来的夏天.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/李志,卡列宁 - 突如其来的夏天.m4a",
+          "duration": 265.457
         },
         {
           "name": "李志,梁颖 - 虎口脱险",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/李志,梁颖 - 虎口脱险.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/李志,梁颖 - 虎口脱险.m4a",
+          "duration": 308.664
         },
         {
           "name": "痛并快乐着",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/痛并快乐着.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/痛并快乐着.m4a",
+          "duration": 180.925
         },
         {
           "name": "老钟 我和你在一起",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/老钟 我和你在一起.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/老钟 我和你在一起.m4a",
+          "duration": 126.068
         },
         {
           "name": "肖晨,陈小二 - 酒吧叙事体",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/肖晨,陈小二 - 酒吧叙事体.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/肖晨,陈小二 - 酒吧叙事体.m4a",
+          "duration": 311.354
         },
         {
           "name": "英俊的海 - 《公路之光》丨李志",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/英俊的海 - 《公路之光》丨李志.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/英俊的海 - 《公路之光》丨李志.m4a",
+          "duration": 545.307
         },
         {
           "name": "谁他妈没织过毛衣",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/谁他妈没织过毛衣.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/谁他妈没织过毛衣.m4a",
+          "duration": 138.293
         },
         {
           "name": "这个世界会好吗2015",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/这个世界会好吗2015.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/这个世界会好吗2015.m4a",
+          "duration": 266.267
         },
         {
           "name": "邵夷贝,黄昏",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/邵夷贝,黄昏.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/邵夷贝,黄昏.m4a",
+          "duration": 232.334
         },
         {
           "name": "阿兰 2012.12.31",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/阿兰 2012.12.31.m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/阿兰 2012.12.31.m4a",
+          "duration": 262.27
         },
         {
           "name": "鹿港小镇 (Live)",
-          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/鹿港小镇 (Live).m4a"
+          "url": "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/零碎/鹿港小镇 (Live).m4a",
+          "duration": 211.305
         }
       ]
     }
