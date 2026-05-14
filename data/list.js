@@ -44,7 +44,7 @@ var list = [
   {
     name: "青春",
     artist: "专辑-108个关键词",
-    url: "https://cdn.jsdelivr.net/gh/nj-lizhi/song@main/audio/108个关键词/青春.flac",
+    url: "https://cdn.jsdelivr.net/gh/roy2100/lizhi_song_player@v1.1-aac/audio/108个关键词/青春.m4a",
     cover:
       "https://cdn.jsdelivr.net/gh/roy2100/lizhi_song_player@v1.0-aac/audio/108个关键词/cover.png",
   },
