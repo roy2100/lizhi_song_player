@@ -47,6 +47,7 @@ export default function App() {
         id: `${album.name}/${t.name}`,
         name: t.name,
         url: t.url,
+        duration: t.duration,
         albumName: album.name,
         cover: album.cover,
         artist: ARTIST_NAME,
