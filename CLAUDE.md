@@ -58,18 +58,22 @@ src/
 
 ## 数据流
 
-1. `list.js` 通过 `?raw` import 以字符串载入，`getListData()` 用 `Function()` 解析为数组（保持原始格式，不要改写 `list.js`）
-2. `normalizeTracks`：解析 `artist` 字段中的专辑名（去掉 `专辑-` 前缀），规范化 CDN 域名（`testingcf.jsdelivr.net` → `cdn.jsdelivr.net`），生成唯一 `id`
-3. `buildAlbums`：按 `albumName` 分组生成专辑列表
+`src/db.json` 是唯一数据源，由 `App.jsx` 直接 `import db from "./db.json"` 加载。
 
-`list.js` 每条数据格式：
-```js
-{ name: "歌曲名", artist: "专辑-专辑名", url: "音频地址", cover: "封面地址" }
+结构：
+```json
+{
+  "tracks": [{ "id": "...", "name": "...", "albumName": "...", "artist": "李志", "url": "...", "cover": "..." }],
+  "albums": [{ "id": "...", "name": "...", "cover": "...", "tracks": [...] }]
+}
 ```
+
+音频和封面 CDN：`cdn.statically.io/gh/roy2100/lizhi_song_player@v1.0-aac/audio/...`（少数曲目用 `@v1.1-aac`）
+
+需要修改曲目数据时直接编辑 `src/db.json`，无需额外生成步骤。
 
 ## 约定
 
 - 不引入完整 UI 库，只使用 `lucide-react` 图标库
 - 样式集中在 `src/styles.css`，不使用 CSS Modules 或 Tailwind
 - GitHub Pages 部署：推送 `main` 分支后 `.github/workflows/deploy-pages.yml` 自动触发；构建时注入 `GITHUB_PAGES=true`，Vite 使用 `/lizhi_song_player/` 作为 `base`
-- `list.js` 保持原始格式，不重构或转换其数据结构

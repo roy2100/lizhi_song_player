@@ -1,6 +1,6 @@
 export const ARTIST_NAME = "李志";
 export const FALLBACK_COVER =
-  "https://cdn.jsdelivr.net/gh/nj-lizhi/song@main/audio/F/cover.png";
+  "https://cdn.statically.io/gh/roy2100/lizhi_song_player@v1.0-aac/audio/F/cover.png";
 
 export function formatTime(seconds) {
   if (!Number.isFinite(seconds) || seconds <= 0) return "--:--";
