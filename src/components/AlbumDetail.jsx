@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { ArrowLeft, Pause, Play, Shuffle } from "lucide-react";
 import { ARTIST_NAME, formatTime } from "../utils";
@@ -7,8 +6,6 @@ export default function AlbumDetail({
   albums,
   currentTrack,
   isPlaying,
-  trackDurations,
-  setTrackDurations,
   failedTracks,
   onBack,
   onPlayAlbum,
@@ -17,31 +14,6 @@ export default function AlbumDetail({
 }) {
   const { albumId } = useParams();
   const album = albums.find((a) => a.name === decodeURIComponent(albumId));
-
-  useEffect(() => {
-    if (!album) return;
-    let cancelled = false;
-    const missing = album.tracks.filter((t) => !trackDurations[t.id]);
-    const audios = missing.map((track) => {
-      const a = new Audio();
-      a.preload = "metadata";
-      a.src = track.url;
-      a.onloadedmetadata = () => {
-        if (!cancelled) {
-          setTrackDurations((d) => ({ ...d, [track.id]: a.duration || 0 }));
-        }
-      };
-      a.onerror = () => {};
-      return a;
-    });
-    return () => {
-      cancelled = true;
-      audios.forEach((a) => {
-        a.removeAttribute("src");
-        a.load();
-      });
-    };
-  }, [album?.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!album) return <Navigate to="/" replace />;
 
@@ -101,7 +73,7 @@ export default function AlbumDetail({
                 {failed && <small>暂时不可播放</small>}
               </span>
               <span className="song-duration">
-                {formatTime(trackDurations[track.id])}
+                {formatTime(track.duration)}
               </span>
             </button>
           );

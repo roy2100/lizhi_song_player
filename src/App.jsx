@@ -75,7 +75,6 @@ export default function App() {
   const [isShuffle, setIsShuffle] = useState(false);
   const [repeatMode, setRepeatMode] = useState("all");
   const [volume, setVolume] = useState(0.88);
-  const [trackDurations, setTrackDurations] = useState({});
   const [failedTracks, setFailedTracks] = useState({});
   const [playCounts, setPlayCounts] = useState(() => loadPlayCounts());
 
@@ -206,7 +205,6 @@ export default function App() {
     const audio = audioRef.current;
     if (!audio || !currentTrack) return;
     setDuration(audio.duration || 0);
-    setTrackDurations((d) => ({ ...d, [currentTrack.id]: audio.duration || 0 }));
   }
 
   function handleAudioError() {
@@ -325,8 +323,6 @@ export default function App() {
               albums={albums}
               currentTrack={currentTrack}
               isPlaying={isPlaying}
-              trackDurations={trackDurations}
-              setTrackDurations={setTrackDurations}
               failedTracks={failedTracks}
               onBack={() => navigate("/")}
               onPlayAlbum={playAlbum}
