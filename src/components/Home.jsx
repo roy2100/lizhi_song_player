@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import { ARTIST_NAME } from "../utils";
+import AlbumCard from "./AlbumCard";
 
 export default function Home({
   albums,
@@ -59,27 +60,11 @@ export default function Home({
       {featuredAlbum && (
         <section className="content-section">
           <h2>代表专辑</h2>
-          <div className="featured-album">
-            <button
-              className="featured-main"
-              type="button"
-              onClick={() => onOpenAlbum(featuredAlbum)}
-            >
-              <img src={featuredAlbum.cover} alt="" />
-              <span>
-                <strong>{featuredAlbum.name}</strong>
-                <small>{featuredAlbum.tracks.length} 首歌曲</small>
-              </span>
-            </button>
-            <button
-              className="featured-play"
-              type="button"
-              onClick={() => onPlayAlbum(featuredAlbum)}
-              aria-label={`播放 ${featuredAlbum.name}`}
-            >
-              <Play size={18} fill="currentColor" />
-            </button>
-          </div>
+          <AlbumCard
+            album={featuredAlbum}
+            onOpen={() => onOpenAlbum(featuredAlbum)}
+            onPlay={() => onPlayAlbum(featuredAlbum)}
+          />
         </section>
       )}
 
@@ -94,17 +79,13 @@ export default function Home({
               return 0;
             })
             .map((album) => (
-            <button
-              className="album-card"
-              type="button"
-              key={album.name}
-              onClick={() => onOpenAlbum(album)}
-            >
-              <img src={album.cover} alt="" />
-              <strong>{album.name}</strong>
-              <span>{album.year ? `${album.year}年` : ""}</span>
-            </button>
-          ))}
+              <AlbumCard
+                key={album.name}
+                album={album}
+                onOpen={() => onOpenAlbum(album)}
+                onPlay={() => onPlayAlbum(album)}
+              />
+            ))}
         </div>
       </section>
     </main>
