@@ -15,13 +15,10 @@ const ROOT = resolve(__dirname, "..");
 
 const ARTIST_NAME = "李志";
 const FALLBACK_COVER =
-  "https://cdn.jsdelivr.net/gh/nj-lizhi/song@main/audio/F/cover.png";
+  "https://cdn.statically.io/gh/roy2100/lizhi_song_player@v1.0-aac/audio/F/cover.png";
 
 function normalizeUrl(url) {
-  return String(url || "").replace(
-    "https://testingcf.jsdelivr.net/",
-    "https://cdn.jsdelivr.net/"
-  );
+  return String(url || "");
 }
 
 function parseListJs(source) {
