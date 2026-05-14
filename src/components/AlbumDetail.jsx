@@ -16,7 +16,7 @@ export default function AlbumDetail({
   playTrack,
 }) {
   const { albumId } = useParams();
-  const album = albums.find((a) => a.id === decodeURIComponent(albumId));
+  const album = albums.find((a) => a.name === decodeURIComponent(albumId));
 
   useEffect(() => {
     if (!album) return;

@@ -311,7 +311,7 @@ export default function App() {
               currentTrack={currentTrack}
               isPlaying={isPlaying}
               onOpenAlbum={(album) =>
-                navigate(`/album/${encodeURIComponent(album.id)}`)
+                navigate(`/album/${encodeURIComponent(album.name)}`)
               }
               onPlayTrack={(track) => playTrack(track, tracks)}
               onPlayAlbum={playAlbum}

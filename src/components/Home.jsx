@@ -90,7 +90,7 @@ export default function Home({
             <button
               className="album-card"
               type="button"
-              key={album.id}
+              key={album.name}
               onClick={() => onOpenAlbum(album)}
             >
               <img src={album.cover} alt="" />
