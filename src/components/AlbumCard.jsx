@@ -4,7 +4,14 @@ export default function AlbumCard({ album, onOpen, onPlay }) {
   return (
     <div className="album-card-wrap">
       <button className="album-card" type="button" onClick={onOpen}>
-        <img src={album.cover} alt="" />
+        <img
+          src={album.cover}
+          alt=""
+          width="172"
+          height="172"
+          loading="lazy"
+          decoding="async"
+        />
         <strong>{album.name}</strong>
         <span>{album.year ? `${album.year}年` : ""}</span>
       </button>

@@ -1,6 +1,6 @@
 export const ARTIST_NAME = "李志";
 export const FALLBACK_COVER =
-  "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.0-aac/audio/F/cover.png";
+  "https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.2-aac/audio/F/cover.webp";
 
 export function formatTime(seconds) {
   if (!Number.isFinite(seconds) || seconds <= 0) return "--:--";

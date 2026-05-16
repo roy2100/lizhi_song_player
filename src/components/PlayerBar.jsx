@@ -75,7 +75,13 @@ export default function PlayerBar({
       </div>
 
       <div className="player-track">
-        <img src={currentTrack?.cover || FALLBACK_COVER} alt="" />
+        <img
+          src={currentTrack?.cover || FALLBACK_COVER}
+          alt=""
+          width="44"
+          height="44"
+          decoding="async"
+        />
         <div className="player-copy">
           <strong>{currentTrack?.name || "未选择歌曲"}</strong>
           <span>

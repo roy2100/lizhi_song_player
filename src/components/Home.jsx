@@ -18,7 +18,14 @@ export default function Home({
       <section className="hero" style={{ "--hero-cover": `url("${artistCover}")` }}>
         <div className="hero-inner">
           <div className="hero-art-wrap">
-            <img className="hero-art" src={artistCover} alt={ARTIST_NAME} />
+            <img
+              className="hero-art"
+              src={artistCover}
+              alt={ARTIST_NAME}
+              width="500"
+              height="500"
+              fetchpriority="high"
+            />
           </div>
           <div className="hero-footer">
             <button
@@ -47,7 +54,14 @@ export default function Home({
               key={track.id}
               onClick={() => onPlayTrack(track)}
             >
-              <img src={track.cover} alt="" />
+              <img
+                src={track.cover}
+                alt=""
+                width="44"
+                height="44"
+                loading="lazy"
+                decoding="async"
+              />
               <span className="chart-meta">
                 <strong>{track.name}</strong>
                 <span>{track.albumName}</span>

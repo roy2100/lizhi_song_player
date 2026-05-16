@@ -25,7 +25,14 @@ export default function AlbumDetail({
       </button>
 
       <div className="album-hero">
-        <img className="album-cover" src={album.cover} alt={album.name} />
+        <img
+          className="album-cover"
+          src={album.cover}
+          alt={album.name}
+          width="500"
+          height="500"
+          decoding="async"
+        />
         <div className="album-info">
           <p className="album-label">专辑</p>
           <h1 className="album-name">{album.name}</h1>

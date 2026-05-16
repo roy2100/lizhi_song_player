@@ -35,6 +35,14 @@
     <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
     <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
 
+    <!-- Preload LCP image (hero artist cover) so the browser fetches it before JS runs -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://raw.githubusercontent.com/roy2100/lizhi_song_player/v1.2-aac/audio/你好，郑州/cover.webp"
+      fetchpriority="high"
+    />
+
     <link rel="icon" href="/favicon.ico" sizes="48x48">
     <link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
