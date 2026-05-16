@@ -41,13 +41,24 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
         runtimeCaching: [
           {
-            // 专辑封面 CDN 缓存，最多 200 张，30 天过期
-            urlPattern: /^https:\/\/cdn\.jsdelivr\.net\/.+\.(jpg|jpeg|png|webp)/i,
+            // 专辑封面缓存，最多 200 张，30 天过期
+            urlPattern: /^https:\/\/raw\.githubusercontent\.com\/.+\.(jpg|jpeg|png|webp)/i,
             handler: "CacheFirst",
             options: {
               cacheName: "covers-cache",
               expiration: { maxEntries: 200, maxAgeSeconds: 30 * 24 * 60 * 60 },
               cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+          {
+            // 音频缓存，最多 300 首，60 天过期
+            urlPattern: /^https:\/\/raw\.githubusercontent\.com\/.+\.(m4a|mp3|aac)/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "audio-cache",
+              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 24 * 60 * 60 },
+              cacheableResponse: { statuses: [0, 200] },
+              rangeRequests: true,
             },
           },
         ],

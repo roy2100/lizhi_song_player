@@ -68,7 +68,7 @@ src/
 }
 ```
 
-音频和封面 CDN：`cdn.statically.io/gh/roy2100/lizhi_song_player@v1.0-aac/audio/...`（少数曲目用 `@v1.1-aac`）
+音频和封面托管在 GitHub：`raw.githubusercontent.com/roy2100/lizhi_song_player/<tag>/audio/...`，当前 tag 包括 `v1.0-aac`、`v1.1-aac`（少数曲目）、`v1.2-aac`（封面 WebP）
 
 需要修改曲目数据时直接编辑 `src/db.json`，无需额外生成步骤。
 
