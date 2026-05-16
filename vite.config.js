@@ -50,18 +50,10 @@ export default defineConfig({
               cacheableResponse: { statuses: [0, 200] },
             },
           },
-          {
-            // 音频缓存，最多 300 首，60 天过期
-            urlPattern: /^https:\/\/raw\.githubusercontent\.com\/.+\.(m4a|mp3|aac)/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "audio-cache",
-              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 24 * 60 * 60 },
-              cacheableResponse: { statuses: [0, 200] },
-              rangeRequests: true,
-            },
-          },
         ],
+        // 不拦截音频请求：<audio> 发的是 Range 请求，让浏览器直接和源服务器
+        // 走流式协商；SW 用 CacheFirst 会破坏 seek/续传。
+        navigateFallbackDenylist: [/\.(m4a|mp3|aac)$/i],
       },
     }),
   ],
