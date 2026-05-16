@@ -4,13 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#1a1a1a" />
+
+    <title>李志音乐播放器 — 在线收听李志全部专辑</title>
+    <meta name="description" content="李志（B 哥）全部专辑在线播放器，Apple Music 风格界面，移动端优先，支持随机播放、循环、PWA 离线收听。包含《1701》《我爱南京》《这个世界会好吗》《在每一条伤心的应天大街上》《电声与管弦乐》等代表作。" />
+    <meta name="keywords" content="李志, 李志音乐, 李志专辑, 李志在线播放, 李志播放器, 1701, 我爱南京, 这个世界会好吗, B哥, 民谣, 摇滚, lizhi" />
+    <meta name="author" content="李志音乐播放器" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <link rel="canonical" href="https://roy2100.github.io/lizhi_song_player/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="李志音乐播放器" />
+    <meta property="og:title" content="李志音乐播放器 — 在线收听李志全部专辑" />
+    <meta property="og:description" content="Apple Music 风格的李志音乐在线播放器，收录李志全部专辑，移动端优先，支持 PWA 离线收听。" />
+    <meta property="og:url" content="https://roy2100.github.io/lizhi_song_player/" />
+    <meta property="og:image" content="https://roy2100.github.io/lizhi_song_player/pwa-512x512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:locale" content="zh_CN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="李志音乐播放器 — 在线收听李志全部专辑" />
+    <meta name="twitter:description" content="Apple Music 风格的李志音乐在线播放器，收录李志全部专辑。" />
+    <meta name="twitter:image" content="https://roy2100.github.io/lizhi_song_player/pwa-512x512.png" />
+
+    <!-- Performance: preconnect to audio/cover CDN -->
+    <link rel="preconnect" href="https://cdn.statically.io" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.statically.io" />
+
     <link rel="icon" href="/favicon.ico" sizes="48x48">
     <link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
-    <title>李志音乐播放器</title>
+
+    <!-- Structured data: WebSite + MusicGroup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://roy2100.github.io/lizhi_song_player/#website",
+          "url": "https://roy2100.github.io/lizhi_song_player/",
+          "name": "李志音乐播放器",
+          "description": "Apple Music 风格的李志音乐在线播放器",
+          "inLanguage": "zh-CN"
+        },
+        {
+          "@type": "MusicGroup",
+          "name": "李志",
+          "alternateName": ["B哥", "Li Zhi"],
+          "genre": ["民谣", "摇滚", "Folk", "Rock"],
+          "url": "https://roy2100.github.io/lizhi_song_player/",
+          "image": "https://roy2100.github.io/lizhi_song_player/pwa-512x512.png"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>李志音乐播放器</h1>
+      <p>李志（B 哥）全部专辑在线播放器，Apple Music 风格界面，支持随机播放、循环与 PWA 离线收听。</p>
+      <p>收录《1701》《我爱南京》《这个世界会好吗》《在每一条伤心的应天大街上》《电声与管弦乐》《你好，郑州》《108 个关键词》等专辑。</p>
+      <p>本应用需要启用 JavaScript 才能运行。</p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roy2100.github.io/lizhi_song_player/sitemap.xml
