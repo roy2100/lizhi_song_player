@@ -117,17 +117,26 @@ export default function App() {
     ? currentQueue.findIndex((t) => t.id === currentTrack.id)
     : -1;
 
-  function playTrack(track, nextQueue = currentQueue, countPlay = true) {
+  function playTrack(track, nextQueue = currentQueue) {
     setQueue(nextQueue.length ? nextQueue : tracks);
     setCurrentTrack(track);
     setIsPlaying(true);
-    if (countPlay) {
-      setPlayCounts((prev) => {
-        const next = { ...prev, [track.id]: (prev[track.id] ?? 0) + 1 };
-        savePlayCounts(next);
-        return next;
-      });
-    }
+  }
+
+  const countedRef = useRef(false);
+
+  useEffect(() => {
+    countedRef.current = false;
+  }, [currentTrack?.id]);
+
+  function handlePlaying() {
+    if (!currentTrack || countedRef.current) return;
+    countedRef.current = true;
+    setPlayCounts((prev) => {
+      const next = { ...prev, [currentTrack.id]: (prev[currentTrack.id] ?? 0) + 1 };
+      savePlayCounts(next);
+      return next;
+    });
   }
 
   function playAlbum(album) {
@@ -177,6 +186,7 @@ export default function App() {
 
   function handleEnded() {
     if (repeatMode === "one") {
+      countedRef.current = false;
       audioRef.current.currentTime = 0;
       audioRef.current.play().catch(() => setIsPlaying(false));
       return;
@@ -189,7 +199,7 @@ export default function App() {
     const next = isShuffle
       ? pickRandom(currentQueue, currentTrack.id)
       : currentQueue[(currentIndex + 1) % currentQueue.length];
-    if (next) playTrack(next, currentQueue, false);
+    if (next) playTrack(next, currentQueue);
   }
 
   function handleSeek(e) {
@@ -354,6 +364,7 @@ export default function App() {
         src={currentTrack?.url || ""}
         preload="metadata"
         onLoadedMetadata={handleLoadedMetadata}
+        onPlaying={handlePlaying}
         onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
         onDurationChange={(e) => setDuration(e.currentTarget.duration || 0)}
         onEnded={handleEnded}
