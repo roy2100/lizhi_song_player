@@ -24,7 +24,7 @@ export default function Home({
               alt={ARTIST_NAME}
               width="500"
               height="500"
-              fetchpriority="high"
+              fetchPriority="high"
             />
           </div>
           <div className="hero-footer">

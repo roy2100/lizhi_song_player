@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import db from "./db.json";
 import {
   FALLBACK_COVER,
@@ -39,6 +39,7 @@ function updateMediaSessionPosition(audio) {
 
 export default function App() {
   const navigate = useNavigate();
+  const location = useLocation();
   const audioRef = useRef(null);
   const albums = useMemo(() => normalizeAlbums(db.albums), []);
   const tracks = useMemo(() => albums.flatMap((a) => a.tracks), [albums]);
@@ -68,11 +69,19 @@ export default function App() {
   const [playCounts, setPlayCounts] = useState(() => loadPlayCounts());
 
   const chartTracks = useMemo(() => {
-    const source = featuredAlbum?.tracks ?? tracks;
-    return [...source]
+    const played = tracks
+      .filter((t) => (playCounts[t.id] ?? 0) > 0)
       .sort((a, b) => (playCounts[b.id] ?? 0) - (playCounts[a.id] ?? 0))
       .slice(0, 12);
+    if (played.length) return played;
+    return (featuredAlbum?.tracks ?? tracks).slice(0, 12);
   }, [featuredAlbum, tracks, playCounts]);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setPlayCounts(loadPlayCounts());
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     setQueue(tracks);
