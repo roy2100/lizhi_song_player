@@ -1,11 +1,14 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
+  computeChartTracks,
   formatTime,
   loadPlayCounts,
   normalizeAlbums,
   pickRandom,
   PLAY_COUNTS_KEY,
   savePlayCounts,
+  selectNextTrack,
+  selectPreviousTrack,
   sortAlbumsByYear,
 } from "./utils";
 
@@ -175,6 +178,110 @@ describe("normalizeAlbums", () => {
     const result = normalizeAlbums(twoAlbums);
     expect(result[0].tracks[0].id).toBe("A/x");
     expect(result[1].tracks[0].id).toBe("B/y");
+  });
+});
+
+describe("computeChartTracks", () => {
+  const tracks = [
+    { id: "a/1", name: "歌1" },
+    { id: "a/2", name: "歌2" },
+    { id: "b/1", name: "歌3" },
+    { id: "b/2", name: "歌4" },
+  ];
+  const featured = { name: "a", tracks: [tracks[0], tracks[1]] };
+
+  it("sorts tracks with plays by count desc, ignores unplayed", () => {
+    const chart = computeChartTracks(tracks, { "a/1": 2, "b/2": 5 }, featured);
+    expect(chart.map((t) => t.id)).toEqual(["b/2", "a/1"]);
+  });
+
+  it("respects limit", () => {
+    const counts = { "a/1": 4, "a/2": 3, "b/1": 2, "b/2": 1 };
+    const chart = computeChartTracks(tracks, counts, featured, 2);
+    expect(chart.map((t) => t.id)).toEqual(["a/1", "a/2"]);
+  });
+
+  it("falls back to featured album tracks when nothing has been played", () => {
+    const chart = computeChartTracks(tracks, {}, featured);
+    expect(chart).toEqual(featured.tracks);
+  });
+
+  it("falls back to all tracks when no featured album given", () => {
+    const chart = computeChartTracks(tracks, {}, null);
+    expect(chart).toEqual(tracks);
+  });
+
+  it("excludes tracks whose play count is zero", () => {
+    const chart = computeChartTracks(tracks, { "a/1": 0, "b/1": 1 }, featured);
+    expect(chart.map((t) => t.id)).toEqual(["b/1"]);
+  });
+});
+
+describe("selectNextTrack", () => {
+  const queue = [{ id: "1" }, { id: "2" }, { id: "3" }];
+
+  it("returns next track in sequence", () => {
+    const next = selectNextTrack({
+      queue,
+      currentTrackId: "1",
+      isShuffle: false,
+      repeatMode: "all",
+    });
+    expect(next.id).toBe("2");
+  });
+
+  it("wraps to first when at end and repeatMode=all", () => {
+    const next = selectNextTrack({
+      queue,
+      currentTrackId: "3",
+      isShuffle: false,
+      repeatMode: "all",
+    });
+    expect(next.id).toBe("1");
+  });
+
+  it("returns null at end when repeatMode=off and not shuffling", () => {
+    const next = selectNextTrack({
+      queue,
+      currentTrackId: "3",
+      isShuffle: false,
+      repeatMode: "off",
+    });
+    expect(next).toBeNull();
+  });
+
+  it("picks random non-current track when isShuffle", () => {
+    for (let i = 0; i < 20; i++) {
+      const next = selectNextTrack({
+        queue,
+        currentTrackId: "2",
+        isShuffle: true,
+        repeatMode: "off",
+      });
+      expect(next.id).not.toBe("2");
+    }
+  });
+
+  it("returns null for empty queue", () => {
+    expect(
+      selectNextTrack({ queue: [], currentTrackId: "x", isShuffle: false, repeatMode: "all" })
+    ).toBeNull();
+  });
+});
+
+describe("selectPreviousTrack", () => {
+  const queue = [{ id: "1" }, { id: "2" }, { id: "3" }];
+
+  it("returns previous track", () => {
+    expect(selectPreviousTrack({ queue, currentTrackId: "2" }).id).toBe("1");
+  });
+
+  it("wraps to last when at first", () => {
+    expect(selectPreviousTrack({ queue, currentTrackId: "1" }).id).toBe("3");
+  });
+
+  it("returns null for empty queue", () => {
+    expect(selectPreviousTrack({ queue: [], currentTrackId: "x" })).toBeNull();
   });
 });
 

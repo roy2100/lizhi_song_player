@@ -9,6 +9,7 @@ export default defineConfig({
   base,
   test: {
     environment: "jsdom",
+    setupFiles: ["./src/test-setup.js"],
   },
   plugins: [
     react(),

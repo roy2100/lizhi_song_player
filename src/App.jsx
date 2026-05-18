@@ -3,10 +3,12 @@ import { Navigate, Route, Routes, useLocation, useNavigate } from "react-router-
 import db from "./db.json";
 import {
   FALLBACK_COVER,
+  computeChartTracks,
   loadPlayCounts,
   normalizeAlbums,
   pickRandom,
   savePlayCounts,
+  selectNextTrack,
 } from "./utils";
 import AlbumDetail from "./components/AlbumDetail";
 import Home from "./components/Home";
@@ -68,14 +70,10 @@ export default function App() {
   const [failedTracks, setFailedTracks] = useState({});
   const [playCounts, setPlayCounts] = useState(() => loadPlayCounts());
 
-  const chartTracks = useMemo(() => {
-    const played = tracks
-      .filter((t) => (playCounts[t.id] ?? 0) > 0)
-      .sort((a, b) => (playCounts[b.id] ?? 0) - (playCounts[a.id] ?? 0))
-      .slice(0, 12);
-    if (played.length) return played;
-    return (featuredAlbum?.tracks ?? tracks).slice(0, 12);
-  }, [featuredAlbum, tracks, playCounts]);
+  const chartTracks = useMemo(
+    () => computeChartTracks(tracks, playCounts, featuredAlbum),
+    [featuredAlbum, tracks, playCounts]
+  );
 
   useEffect(() => {
     if (location.pathname === "/") {
@@ -191,15 +189,17 @@ export default function App() {
       audioRef.current.play().catch(() => setIsPlaying(false));
       return;
     }
-    const isLast = currentIndex === currentQueue.length - 1;
-    if (isLast && repeatMode === "off" && !isShuffle) {
+    const next = selectNextTrack({
+      queue: currentQueue,
+      currentTrackId: currentTrack.id,
+      isShuffle,
+      repeatMode,
+    });
+    if (!next) {
       setIsPlaying(false);
       return;
     }
-    const next = isShuffle
-      ? pickRandom(currentQueue, currentTrack.id)
-      : currentQueue[(currentIndex + 1) % currentQueue.length];
-    if (next) playTrack(next, currentQueue);
+    playTrack(next, currentQueue);
   }
 
   function handleSeek(e) {

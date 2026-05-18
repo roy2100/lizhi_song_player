@@ -51,6 +51,31 @@ export function normalizeAlbums(rawAlbums) {
   }));
 }
 
+export function computeChartTracks(tracks, playCounts, featuredAlbum, limit = 12) {
+  const played = tracks
+    .filter((t) => (playCounts[t.id] ?? 0) > 0)
+    .sort((a, b) => (playCounts[b.id] ?? 0) - (playCounts[a.id] ?? 0))
+    .slice(0, limit);
+  if (played.length) return played;
+  return (featuredAlbum?.tracks ?? tracks).slice(0, limit);
+}
+
+export function selectNextTrack({ queue, currentTrackId, isShuffle, repeatMode }) {
+  if (!queue.length) return null;
+  const index = queue.findIndex((t) => t.id === currentTrackId);
+  const isLast = index === queue.length - 1;
+  if (isLast && repeatMode === "off" && !isShuffle) return null;
+  if (isShuffle) return pickRandom(queue, currentTrackId);
+  return queue[(index + 1) % queue.length];
+}
+
+export function selectPreviousTrack({ queue, currentTrackId }) {
+  if (!queue.length) return null;
+  const index = queue.findIndex((t) => t.id === currentTrackId);
+  const prevIndex = index <= 0 ? queue.length - 1 : index - 1;
+  return queue[prevIndex];
+}
+
 export function sortAlbumsByYear(albums) {
   return [...albums].sort((a, b) => {
     if (a.year && b.year) return b.year - a.year;
