@@ -283,6 +283,78 @@ describe("App — chart sorting", () => {
     expect(titles.slice(0, 3)).toEqual(["热河", "定西", "大象"]);
   });
 
+  it("does NOT reorder chart while playing on the home page (snapshot stays stable)", async () => {
+    localStorage.setItem(
+      PLAY_COUNTS_KEY,
+      JSON.stringify({
+        "电声与管弦乐/大象": 3,
+        "电声与管弦乐/和你在一起": 3,
+      })
+    );
+    const user = userEvent.setup();
+    const { container } = renderApp();
+    const audio = container.querySelector("audio");
+
+    const titlesBefore = chartItems().map(
+      (el) => el.querySelector("strong")?.textContent
+    );
+    expect(titlesBefore.slice(0, 2)).toEqual(["大象", "和你在一起"]);
+
+    // 播 和你在一起 让它超过 大象 计数
+    await clickChartByTitle(user, "和你在一起");
+    await act(async () => {
+      fireEvent.playing(audio);
+    });
+
+    // localStorage 里 和你在一起 已 4 > 大象 3
+    expect(readCounts()["电声与管弦乐/和你在一起"]).toBeGreaterThan(
+      readCounts()["电声与管弦乐/大象"]
+    );
+
+    // 但首页排行视图顺序不变（避免点击导致跳动）
+    const titlesAfter = chartItems().map(
+      (el) => el.querySelector("strong")?.textContent
+    );
+    expect(titlesAfter).toEqual(titlesBefore);
+  });
+
+  it("refreshes the chart when navigating back to the home page", async () => {
+    localStorage.setItem(
+      PLAY_COUNTS_KEY,
+      JSON.stringify({
+        "电声与管弦乐/大象": 3,
+        "电声与管弦乐/和你在一起": 3,
+      })
+    );
+    const user = userEvent.setup();
+    const { container } = renderApp();
+    const audio = container.querySelector("audio");
+
+    // 在首页播放 和你在一起，让 localStorage 里它领先
+    await clickChartByTitle(user, "和你在一起");
+    await act(async () => {
+      fireEvent.playing(audio);
+    });
+
+    // 视图未刷新
+    expect(
+      chartItems().map((el) => el.querySelector("strong")?.textContent).slice(0, 2)
+    ).toEqual(["大象", "和你在一起"]);
+
+    // 跳到 album 详情，再点返回回到首页
+    const albumCard = Array.from(container.querySelectorAll(".album-card")).find(
+      (el) => el.querySelector("strong")?.textContent === "电声与管弦乐"
+    );
+    await user.click(albumCard);
+    await user.click(screen.getByText("返回"));
+
+    // 首页排行视图按最新计数重新排序
+    const titles = chartItems().map(
+      (el) => el.querySelector("strong")?.textContent
+    );
+    expect(titles[0]).toBe("和你在一起");
+  });
+
   it("falls back to featured album when no plays recorded", () => {
     renderApp();
     const items = screen

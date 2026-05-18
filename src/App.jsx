@@ -68,16 +68,24 @@ export default function App() {
   const [repeatMode, setRepeatMode] = useState("all");
   const [volume, setVolume] = useState(0.88);
   const [failedTracks, setFailedTracks] = useState({});
-  const [playCounts, setPlayCounts] = useState(() => loadPlayCounts());
+  // 排行用快照渲染：只在进入首页时刷新；播放写入走 ref + localStorage，
+  // 避免每次播放都触发 chart 重排带来跳动。
+  const [chartCounts, setChartCounts] = useState(() => loadPlayCounts());
+  const playCountsRef = useRef(null);
+  if (playCountsRef.current === null) {
+    playCountsRef.current = loadPlayCounts();
+  }
 
   const chartTracks = useMemo(
-    () => computeChartTracks(tracks, playCounts, featuredAlbum),
-    [featuredAlbum, tracks, playCounts]
+    () => computeChartTracks(tracks, chartCounts, featuredAlbum),
+    [featuredAlbum, tracks, chartCounts]
   );
 
   useEffect(() => {
     if (location.pathname === "/") {
-      setPlayCounts(loadPlayCounts());
+      const fresh = loadPlayCounts();
+      playCountsRef.current = fresh;
+      setChartCounts(fresh);
     }
   }, [location.pathname]);
 
@@ -130,11 +138,12 @@ export default function App() {
   function handlePlaying() {
     if (!currentTrack || countedRef.current) return;
     countedRef.current = true;
-    setPlayCounts((prev) => {
-      const next = { ...prev, [currentTrack.id]: (prev[currentTrack.id] ?? 0) + 1 };
-      savePlayCounts(next);
-      return next;
-    });
+    const next = {
+      ...playCountsRef.current,
+      [currentTrack.id]: (playCountsRef.current[currentTrack.id] ?? 0) + 1,
+    };
+    playCountsRef.current = next;
+    savePlayCounts(next);
   }
 
   function playAlbum(album) {
