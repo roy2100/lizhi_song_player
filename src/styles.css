@@ -800,17 +800,20 @@ input[type="range"]::-moz-range-thumb {
     padding-inline: 10px;
   }
 
-  /* Queue panel: match player bar width/position on desktop */
+  /* Queue panel: centered above player bar on desktop */
   .queue-panel {
-    right: auto;
-    left: 50%;
+    left: 0;
+    right: 0;
     bottom: calc(max(22px, env(safe-area-inset-bottom)) + 96px + 8px);
     width: min(700px, calc(100vw - 64px));
-    transform: translateX(-50%) translateY(16px);
+    margin-left: auto;
+    margin-right: auto;
+    /* translateY-only animation, no horizontal transform needed */
+    transform: translateY(16px);
   }
 
   .queue-panel.is-open {
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
 
   /* Player bar: 3-col centered pill */
