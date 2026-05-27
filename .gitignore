@@ -2,3 +2,4 @@ node_modules/
 dist/
 *-check.png
 .DS_Store
+.playwright-mcp
