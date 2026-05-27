@@ -13,6 +13,7 @@ import {
 import AlbumDetail from "./components/AlbumDetail";
 import Home from "./components/Home";
 import PlayerBar from "./components/PlayerBar";
+import QueuePanel from "./components/QueuePanel";
 
 function setMediaSessionAction(action, handler) {
   if (typeof navigator === "undefined" || !("mediaSession" in navigator)) return;
@@ -67,6 +68,7 @@ export default function App() {
   const [isShuffle, setIsShuffle] = useState(false);
   const [repeatMode, setRepeatMode] = useState("all");
   const [volume, setVolume] = useState(0.88);
+  const [isQueueOpen, setIsQueueOpen] = useState(false);
   const [failedTracks, setFailedTracks] = useState({});
   // 排行用快照渲染：只在进入首页时刷新；播放写入走 ref + localStorage，
   // 避免每次播放都触发 chart 重排带来跳动。
@@ -351,6 +353,14 @@ export default function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
+      <QueuePanel
+        queue={currentQueue}
+        currentTrack={currentTrack}
+        isOpen={isQueueOpen}
+        onClose={() => setIsQueueOpen(false)}
+        onPlayTrack={(track) => playTrack(track, currentQueue)}
+      />
+
       <PlayerBar
         currentTrack={currentTrack}
         isPlaying={isPlaying}
@@ -359,6 +369,7 @@ export default function App() {
         isShuffle={isShuffle}
         repeatMode={repeatMode}
         volume={volume}
+        isQueueOpen={isQueueOpen}
         onTogglePlay={togglePlay}
         onPrevious={playPrevious}
         onNext={playNext}
@@ -366,6 +377,7 @@ export default function App() {
         onToggleShuffle={() => setIsShuffle((v) => !v)}
         onCycleRepeat={cycleRepeatMode}
         onVolumeChange={setVolume}
+        onToggleQueue={() => setIsQueueOpen((v) => !v)}
       />
 
       <audio

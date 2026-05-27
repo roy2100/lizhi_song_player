@@ -1,4 +1,5 @@
 import {
+  ListMusic,
   Pause,
   Play,
   Repeat,
@@ -17,6 +18,7 @@ export default function PlayerBar({
   isShuffle,
   repeatMode,
   volume,
+  isQueueOpen,
   onTogglePlay,
   onPrevious,
   onNext,
@@ -24,6 +26,7 @@ export default function PlayerBar({
   onToggleShuffle,
   onCycleRepeat,
   onVolumeChange,
+  onToggleQueue,
 }) {
   const progress = duration ? (currentTime / duration) * 100 : 0;
 
@@ -70,6 +73,15 @@ export default function PlayerBar({
           >
             <Repeat size={18} />
             {repeatMode === "one" && <span className="repeat-badge">1</span>}
+          </button>
+          <button
+            className={`queue-toggle-btn${isQueueOpen ? " is-active" : ""}`}
+            type="button"
+            onClick={onToggleQueue}
+            aria-label="播放队列"
+            aria-expanded={isQueueOpen}
+          >
+            <ListMusic size={18} />
           </button>
         </div>
       </div>
