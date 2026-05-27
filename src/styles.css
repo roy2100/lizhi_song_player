@@ -618,13 +618,13 @@ img {
 .player-controls {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
+  gap: 0;
 }
 
 .player-controls button {
   display: grid;
   place-items: center;
-  width: 36px;
+  width: 34px;
   height: 36px;
   padding: 0;
   border: 0;

@@ -35,7 +35,7 @@ export default function PlayerBar({
       <div className="player-center">
         <div className="player-controls">
           <button
-            className={`desktop-only${isShuffle ? " is-active" : ""}`}
+            className={isShuffle ? "is-active" : ""}
             type="button"
             onClick={onToggleShuffle}
             aria-label="随机播放"
@@ -66,7 +66,7 @@ export default function PlayerBar({
             <SkipForward size={21} fill="currentColor" />
           </button>
           <button
-            className={`desktop-only repeat-btn${repeatMode !== "off" ? " is-active" : ""}`}
+            className={`repeat-btn${repeatMode !== "off" ? " is-active" : ""}`}
             type="button"
             onClick={onCycleRepeat}
             aria-label="循环模式"
