@@ -138,11 +138,21 @@ describe("App — repeat / shuffle behavior", () => {
   }
 
   it("repeat=all: ended on last track plays the first track", async () => {
+    // 预置所有 4 首歌的计数，确保 chartTracks = [大象, 和你在一起, 定西, 热河]（按 db 顺序）
+    localStorage.setItem(
+      PLAY_COUNTS_KEY,
+      JSON.stringify({
+        "电声与管弦乐/大象": 1,
+        "电声与管弦乐/和你在一起": 1,
+        "电声与管弦乐/定西": 1,
+        "1701/热河": 1,
+      })
+    );
     const user = userEvent.setup();
     const { container } = renderApp();
     const audio = container.querySelector("audio");
 
-    // 进入 album 视图来准确控制队列：默认队列就是 tracks（全部），按点击切到 定西（队列第3首）
+    // 点击排行中的 定西（队列第3首，队列顺序 [大象, 和你在一起, 定西, 热河]）
     await clickChartByTitle(user, "定西");
     await act(async () => {
       fireEvent.playing(audio);
@@ -251,17 +261,17 @@ describe("App — repeat / shuffle behavior", () => {
     renderApp();
     const repeatBtn = screen.getByLabelText("循环模式");
 
-    // 初始 all：badge 不出现
-    expect(screen.queryByText("1")).not.toBeInTheDocument();
+    // 初始 all：repeat-badge 不出现（用精确选择器，避免匹配 queue-index 的"1"）
+    expect(screen.queryByText("1", { selector: ".repeat-badge" })).not.toBeInTheDocument();
 
     await user.click(repeatBtn);
-    expect(screen.getByText("1")).toBeInTheDocument(); // one
+    expect(screen.getByText("1", { selector: ".repeat-badge" })).toBeInTheDocument(); // one
 
     await user.click(repeatBtn);
-    expect(screen.queryByText("1")).not.toBeInTheDocument(); // off
+    expect(screen.queryByText("1", { selector: ".repeat-badge" })).not.toBeInTheDocument(); // off
 
     await user.click(repeatBtn);
-    expect(screen.queryByText("1")).not.toBeInTheDocument(); // all
+    expect(screen.queryByText("1", { selector: ".repeat-badge" })).not.toBeInTheDocument(); // all
   });
 });
 
