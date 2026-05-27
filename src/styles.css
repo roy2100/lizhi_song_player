@@ -802,15 +802,15 @@ input[type="range"]::-moz-range-thumb {
 
   /* Queue panel: match player bar width/position on desktop */
   .queue-panel {
-    right: 50%;
+    right: auto;
+    left: 50%;
     bottom: calc(max(22px, env(safe-area-inset-bottom)) + 96px + 8px);
-    left: auto;
     width: min(700px, calc(100vw - 64px));
-    transform: translateX(50%) translateY(16px);
+    transform: translateX(-50%) translateY(16px);
   }
 
   .queue-panel.is-open {
-    transform: translateX(50%) translateY(0);
+    transform: translateX(-50%) translateY(0);
   }
 
   /* Player bar: 3-col centered pill */
