@@ -6,6 +6,7 @@ export default function Home({
   albums,
   chartTracks,
   featuredAlbum,
+  june4Album,
   artistCover,
   currentTrack,
   isPlaying,
@@ -78,6 +79,12 @@ export default function Home({
             album={featuredAlbum}
             onOpen={() => onOpenAlbum(featuredAlbum)}
           />
+          {june4Album && (
+            <AlbumCard
+              album={june4Album}
+              onOpen={() => onOpenAlbum(june4Album)}
+            />
+          )}
         </section>
       )}
 

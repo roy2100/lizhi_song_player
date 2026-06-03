@@ -15,6 +15,12 @@ import Home from "./components/Home";
 import PlayerBar from "./components/PlayerBar";
 import QueuePanel from "./components/QueuePanel";
 
+function isTodayJune4InCST() {
+  const now = new Date();
+  const cstDate = new Date(now.getTime() + (8 * 60 + now.getTimezoneOffset()) * 60 * 1000);
+  return cstDate.getMonth() === 5 && cstDate.getDate() === 4;
+}
+
 function setMediaSessionAction(action, handler) {
   if (typeof navigator === "undefined" || !("mediaSession" in navigator)) return;
   try {
@@ -54,6 +60,11 @@ export default function App() {
         if (!best) return a;
         return a.tracks.length > best.tracks.length ? a : best;
       }, null),
+    [albums]
+  );
+
+  const june4Album = useMemo(
+    () => isTodayJune4InCST() ? (albums.find((a) => a.name === "广场合集") ?? null) : null,
     [albums]
   );
 
@@ -324,6 +335,7 @@ export default function App() {
               albums={albums}
               chartTracks={chartTracks}
               featuredAlbum={featuredAlbum}
+              june4Album={june4Album}
               artistCover={artistCover}
               currentTrack={currentTrack}
               isPlaying={isPlaying}
