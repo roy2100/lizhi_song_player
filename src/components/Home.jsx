@@ -75,16 +75,18 @@ export default function Home({
       {featuredAlbum && (
         <section className="content-section">
           <h2>代表专辑</h2>
-          <AlbumCard
-            album={featuredAlbum}
-            onOpen={() => onOpenAlbum(featuredAlbum)}
-          />
-          {june4Album && (
+          <div className="album-rail">
             <AlbumCard
-              album={june4Album}
-              onOpen={() => onOpenAlbum(june4Album)}
+              album={featuredAlbum}
+              onOpen={() => onOpenAlbum(featuredAlbum)}
             />
-          )}
+            {june4Album && (
+              <AlbumCard
+                album={june4Album}
+                onOpen={() => onOpenAlbum(june4Album)}
+              />
+            )}
+          </div>
         </section>
       )}
 
