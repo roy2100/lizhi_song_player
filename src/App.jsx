@@ -338,12 +338,10 @@ export default function App() {
               june4Album={june4Album}
               artistCover={artistCover}
               currentTrack={currentTrack}
-              isPlaying={isPlaying}
               onOpenAlbum={(album) =>
                 navigate(`/album/${encodeURIComponent(album.name)}`)
               }
               onPlayTrack={(track) => playTrack(track, chartTracks)}
-              onPlayAlbum={playAlbum}
             />
           }
         />

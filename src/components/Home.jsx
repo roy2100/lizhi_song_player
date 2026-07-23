@@ -9,10 +9,8 @@ export default function Home({
   june4Album,
   artistCover,
   currentTrack,
-  isPlaying,
   onOpenAlbum,
   onPlayTrack,
-  onPlayAlbum,
 }) {
   return (
     <>
@@ -32,7 +30,7 @@ export default function Home({
             <button
               className="hero-play"
               type="button"
-              onClick={() => featuredAlbum && onPlayAlbum(featuredAlbum)}
+              onClick={() => chartTracks[0] && onPlayTrack(chartTracks[0])}
               aria-label="播放"
             >
               <Play size={20} fill="currentColor" />

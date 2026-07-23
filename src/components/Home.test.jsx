@@ -22,7 +22,6 @@ function renderHome(overrides = {}) {
     featuredAlbum,
     artistCover: "https://example.com/artist.png",
     currentTrack: null,
-    isPlaying: false,
     ...handlers,
     ...overrides,
   };
@@ -44,11 +43,11 @@ describe("Home", () => {
     expect(props.onPlayTrack).toHaveBeenCalledWith(tracks[1]);
   });
 
-  it("clicking the hero play button plays the featured album", async () => {
+  it("clicking the hero play button plays the top chart track", async () => {
     const user = userEvent.setup();
     const props = renderHome();
     await user.click(screen.getByLabelText("播放"));
-    expect(props.onPlayAlbum).toHaveBeenCalledWith(featuredAlbum);
+    expect(props.onPlayTrack).toHaveBeenCalledWith(tracks[0]);
   });
 
   it("renders the chart in the order received (already sorted by parent)", () => {
